@@ -3,14 +3,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body,
-h1,
-h2,
-h3,
-p {
-  margin: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -20,7 +19,6 @@ li {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 img,
