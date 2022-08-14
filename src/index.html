@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Pawel Komorkiewicz - Front End Developer</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Pawel Komorkiewicz - Front End Developer</title>
     <meta name="title" content="Pawel Komorkiewicz - Front End Developer" />
     <meta name="description" content="Pawel description" />
 
@@ -31,11 +31,90 @@
     <!-- Change !!!!!!!!!!!!!!!! -->
     <!-- <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" /> -->
     <!-- Change !!!!!!!!!!!!!!!! -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,200&display=swap"
+      rel="stylesheet" />
+
+    <!-- Css -->
     <link rel="stylesheet" href="./css/main.css" />
-    <script type="module" src="./js/index.js"></script>
-    <title>Pawel Komorkiewicz - Front End Developer</title>
+
+    <!-- Js -->
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body>
-    Pawel
+    <section class="hero">
+      <header>
+        <nav class="nav__bar">
+          <picture class="nav__bar-logo">
+            <source media="(max-width:465px)" srcset="/assets/icons/LOGO-WEBP.webp" />
+            <img src="/assets/icons/LOGO.png" alt="logo, red letter p with white stroke" />
+          </picture>
+          <ul class="nav__bar-links">
+            <li class="nav-link">
+              <a href="#">Projects</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero__main">
+        <img class="hero__main-greeting" src="/assets/icons/hi.svg" alt="greeting icon" />
+        <p class="hero__main-description">
+          I am Pawel. Front end engineer with passion to modern UI and coding.
+        </p>
+        <h1 class="hero__main-heading">Creative developer</h1>
+        <picture class="hero__main-img">
+          <source media="(max-width:465px)" srcset="/assets/icons/pc.svg" />
+          <img src="/assets/icons/pc.svg" alt="logo, red letter p with white stroke" />
+        </picture>
+        <button class="hero__main-btn">HIGH FIVE !</button>
+      </div>
+    </section>
+    <!-- DIVIDER -->
+    <main>
+      <section class="projects">
+        <!-- web component ?? -->
+        <h2 class="heading projects__heading">Projects</h2>
+        <p>Forge while the iron is hot ! Here are my recent efforts that I am proud of.</p>
+        <!-- Project1 -->
+        <!-- Project2 -->
+        <!-- Project3 -->
+        <!-- Project4 -->
+      </section>
+      <section class="about">
+        <!-- web component ?? -->
+        <h2 class="heading about__heading">Few words about me</h2>
+        <img src="/assets/icons/about-me-icon.png" alt="doodle icon" />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in repellendus
+          asperiores magnam accusantium est odit aliquam nihil labore ducimus quos maxime, sed vel
+          molestiae? Quisquam, placeat unde.
+        </article>
+      </section>
+      <section class="contact">
+        <!-- web component ?? -->
+        <h2 class="heading contact_heading">Give me a shout !</h2>
+        <p>Drop an email</p>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in repellendus
+        asperiores magnam accusantium est odit aliquam nihil labore ducimus quos maxime, sed vel
+        molestiae? Quisquam, placeat unde.
+      </section>
+    </main>
+    <!-- DIVIDER -->
+    <footer>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat repellendus quos,
+      unde porro molestiae quo fugiat nostrum, blanditiis tempora obcaecati sapiente eius
+      necessitatibus aut sit tempore itaque doloremque? Nostrum!
+    </footer>
   </body>
 </html>
