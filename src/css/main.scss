@@ -2,6 +2,10 @@
 @import "./partials/hero";
 @import "./partials/colors";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   color: $dark;
