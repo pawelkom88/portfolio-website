@@ -43,45 +43,85 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Js -->
-    <script defer type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
     <section class="hero">
       <header>
         <nav class="nav__bar">
-          <picture class="nav__bar-logo">
-            <source media="(max-width:465px)" srcset="/assets/icons/LOGO-WEBP.webp" />
-            <img src="/assets/icons/LOGO.png" alt="logo, red letter p with white stroke" />
-          </picture>
+          <a href="index.html">
+            <picture class="nav__bar-logo">
+              <source media="(max-width:576px)" srcset="/assets/icons/LOGO-WEBP.webp" />
+              <img
+                src="/assets/icons/LOGO.png"
+                srcset="/assets/icons/LOGO.png 1x"
+                alt="logo, red letter p with white stroke" />
+            </picture>
+          </a>
           <ul class="nav__bar-links">
             <li class="nav-link">
-              <a href="#">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li class="nav-link">
-              <a href="#">About</a>
+              <a href="#About">About</a>
             </li>
             <li class="nav-link">
-              <a href="#">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </nav>
       </header>
       <div class="hero__main">
-        <img class="hero__main-greeting" src="/assets/icons/hi.svg" alt="greeting icon" />
-        <p class="hero__main-description">
-          I am Pawel. Front end engineer with passion to modern UI and coding.
-        </p>
-        <h1 class="hero__main-heading">Creative developer</h1>
-        <picture class="hero__main-img">
-          <source media="(max-width:465px)" srcset="/assets/icons/pc.svg" />
-          <img src="/assets/icons/pc.svg" alt="logo, red letter p with white stroke" />
-        </picture>
+        <img class="hero__main-greeting" src="/assets/icons/hi.png" alt="greeting icon hi" />
+        <p class="hero__main-description">I am Pawel</p>
+        <h1 class="hero__main-heading">I design & build UI.</h1>
+        <div class="picture-container">
+          <picture class="floating-icon">
+            <source media="(max-width:576px)" srcset="/assets/icons/html.webp" />
+            <img
+              src="/assets/icons/html.png"
+              srcset="/assets/icons/html.png 1x"
+              alt="floating icon" />
+          </picture>
+          <picture class="floating-icon">
+            <source media="(max-width:576px)" srcset="/assets/icons/React.webp" />
+            <img
+              src="/assets/icons/React.png"
+              srcset="/assets/icons/React.png 1x"
+              alt="floating icon" />
+          </picture>
+          <picture class="floating-icon">
+            <source media="(max-width:576px)" srcset="/assets/icons/JavaScript.webp" />
+            <img
+              src="/assets/icons/JavaScript.png"
+              srcset="/assets/icons/JavaScript.png 1x"
+              alt="floating icon" />
+          </picture>
+          <picture class="floating-icon">
+            <source media="(max-width:576px)" srcset="/assets/icons/css.webp" />
+            <img
+              src="/assets/icons/css.png"
+              srcset="/assets/icons/css.png 1x"
+              alt="floating icon" />
+          </picture>
+          <picture class="floating-icon">
+            <source media="(max-width:576px)" srcset="/assets/icons/ux.webp" />
+            <img src="/assets/icons/ux.png" srcset="/assets/icons/ux.png 1x" alt="floating icon" />
+          </picture>
+          <picture class="hero__main-img">
+            <source media="(max-width:576px)" srcset="/assets/icons/pc.webp" />
+            <img
+              src="/assets/icons/pc.svg"
+              alt="logo, red letter p with white stroke"
+              sizes="52px" />
+          </picture>
+        </div>
         <button class="hero__main-btn">HIGH FIVE !</button>
       </div>
     </section>
-    <!-- DIVIDER -->
+    <img class="divider" src="/assets/img/divider1.svg" alt="divider" />
     <main>
-      <section class="projects">
+      <section id="Projects" class="projects">
         <!-- web component ?? -->
         <h2 class="heading projects__heading">Projects</h2>
         <p>Forge while the iron is hot ! Here are my recent efforts that I am proud of.</p>
@@ -90,7 +130,7 @@
         <!-- Project3 -->
         <!-- Project4 -->
       </section>
-      <section class="about">
+      <section id="About" class="about">
         <!-- web component ?? -->
         <h2 class="heading about__heading">Few words about me</h2>
         <img src="/assets/icons/about-me-icon.png" alt="doodle icon" />
@@ -100,7 +140,7 @@
           molestiae? Quisquam, placeat unde.
         </article>
       </section>
-      <section class="contact">
+      <section id="Contact" class="contact">
         <!-- web component ?? -->
         <h2 class="heading contact_heading">Give me a shout !</h2>
         <p>Drop an email</p>
