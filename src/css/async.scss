@@ -1,0 +1,82 @@
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/breakpoints";
+@import "./partials/mixins";
+
+.projects {
+  background-color: #f0f4f7;
+  padding: 0 15%;
+
+  @media (max-width: $md) {
+    padding-top: 2rem;
+  }
+
+  &__card {
+    height: 60vh;
+    @include flex(space-between, center);
+    margin-top: 5rem;
+    padding: 0 5rem;
+
+    @media (max-width: $large) {
+      display: none;
+    }
+
+    &-img {
+      flex-basis: 50%;
+      display: flex;
+      @include flex(center, center);
+    }
+
+    &-desc {
+      flex-basis: 40%;
+      height: 55vh;
+      padding: 7%;
+      background-color: $white;
+      transform: translateY(-5vh);
+      filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
+
+      & .card-heading {
+        font-size: clamp(0.75rem, 0.3rem + 1.5vw, 3rem);
+        font-weight: 900;
+        color: $pink;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      & .card-icons {
+        display: flex;
+
+        & * {
+          margin-right: 0.5rem;
+        }
+      }
+
+      & .card-btn {
+        $clr: $pinkish;
+        $outline: 1px solid $clr;
+
+        font-weight: $extra-light;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        margin-right: 1rem;
+        background: none;
+        outline: $outline;
+        border: $outline;
+        border-radius: 2rem;
+        outline-offset: -2px;
+        transition: outline-offset 0.1s ease-in-out;
+
+        &:hover,
+        &:focus {
+          outline: $outline;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+.outletity {
+  background-color: $pink;
+}

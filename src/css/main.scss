@@ -22,8 +22,23 @@ h2 {
 
 section {
   min-height: 100vh;
+  padding: 2vw 10vw;
+}
+
+.heading {
+  font-size: clamp(1rem, 0.4rem + 1.5vw, 4rem);
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  font-size: clamp(0.75rem, 0.2rem + 1vw, 3rem);
 }
 
 .divider {
   width: 100%;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
 }

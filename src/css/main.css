@@ -48,6 +48,38 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-ExtraLight.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-SemiBold.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-ExtraBold.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-Black.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 @-webkit-keyframes float {
   0% {
     transform: translate(0px, 0px);
@@ -117,22 +149,13 @@ select {
     justify-content: center;
   }
 }
-.nav__bar-logo img {
-  max-width: 60px;
-}
-@media (max-width: 576px) {
-  .nav__bar-logo img {
-    margin-bottom: 1rem;
-    max-width: 40px;
-  }
-}
 .nav__bar-links {
   display: flex;
 }
 .nav__bar-links li a {
   font-size: clamp(1rem, 12px + 1vw, 1.25rem);
   font-weight: 800;
-  padding: 0 1rem;
+  padding: 0.8rem 1.7rem;
   cursor: pointer;
 }
 .nav__bar-links li a:hover {
@@ -143,20 +166,25 @@ select {
 }
 .nav__bar-links li:last-child a::after {
   position: absolute;
-  top: 13px;
-  left: 4px;
+  top: 25px;
+  left: 15px;
   transform: scale(0.8);
   content: url(/assets/icons/contact-link-doodle.svg);
 }
 @media (max-width: 576px) {
   .nav__bar-links li:last-child a::after {
-    left: -2px;
+    left: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__bar-logo img {
+    margin-bottom: 1rem;
   }
 }
 
 .hero {
   background-color: #a1ccdd;
-  padding: 2vw 10vw;
 }
 .hero__main {
   min-height: 80vh;
@@ -174,11 +202,6 @@ select {
 .hero__main-greeting {
   -webkit-animation: fadeIn 0.7s ease-in-out backwards;
           animation: fadeIn 0.7s ease-in-out backwards;
-}
-@media (max-width: 1690px) {
-  .hero__main-greeting {
-    max-width: 40px;
-  }
 }
 .hero__main-description {
   font-size: clamp(1rem, 12px + 0.6vw, 1.8rem);
@@ -244,23 +267,23 @@ select {
 }
 
 .floating-icon:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .floating-icon:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.floating-icon:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
+.floating-icon:nth-child(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
 .floating-icon:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 @media (min-width: 300px) {
@@ -374,55 +397,55 @@ select {
 @media (min-width: 300px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: -8%;
+    right: -3%;
   }
 }
 @media (min-width: 414px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: -7%;
+    right: -2%;
   }
 }
 @media (min-width: 576px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: -6%;
+    right: -1%;
   }
 }
 @media (min-width: 768px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: -5%;
+    right: 10%;
   }
 }
 @media (min-width: 992px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: 26%;
+    right: 21%;
   }
 }
 @media (min-width: 1200px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: 27%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: 28%;
+    right: 23%;
   }
 }
 @media (min-width: 1690px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: 29%;
+    right: 31%;
   }
 }
 @media (min-width: 1921px) {
   .floating-icon:nth-child(3) {
     top: 15%;
-    right: 30%;
+    right: 35%;
   }
 }
 @media (min-width: 300px) {
@@ -446,37 +469,37 @@ select {
 @media (min-width: 768px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 0%;
+    right: 15%;
   }
 }
 @media (min-width: 992px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 28%;
+    right: 23%;
   }
 }
 @media (min-width: 1200px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 29%;
+    right: 24%;
   }
 }
 @media (min-width: 1400px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 30%;
+    right: 25%;
   }
 }
 @media (min-width: 1690px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 31%;
+    right: 32%;
   }
 }
 @media (min-width: 1921px) {
   .floating-icon:nth-child(4) {
     top: 55%;
-    right: 32%;
+    right: 33%;
   }
 }
 @media (min-width: 300px) {
@@ -553,8 +576,23 @@ h2 {
 
 section {
   min-height: 100vh;
+  padding: 2vw 10vw;
+}
+
+.heading {
+  font-size: clamp(1rem, 0.4rem + 1.5vw, 4rem);
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  font-size: clamp(0.75rem, 0.2rem + 1vw, 3rem);
 }
 
 .divider {
   width: 100%;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

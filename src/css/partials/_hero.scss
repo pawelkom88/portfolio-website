@@ -4,10 +4,6 @@
 @import "./animations";
 @import "./breakpoints";
 
-// variables calculated in index.js file
-// $height: calc(var(--height) * 1px);
-// $width: calc(var(--width) * 1px);
-
 $breakpoints: (
   0: $super-small,
   1: $x-sm,
@@ -28,22 +24,13 @@ $breakpoints: (
     justify-content: center;
   }
 
-  &-logo img {
-    max-width: 60px;
-
-    @media (max-width: $sm) {
-      margin-bottom: 1rem;
-      max-width: 40px;
-    }
-  }
-
   &-links {
     display: flex;
 
     & li a {
       font-size: clamp(1rem, calc(12px + 1vw), 1.25rem);
       font-weight: $bold;
-      padding: 0 1rem;
+      padding: 0.8rem 1.7rem;
       cursor: pointer;
 
       &:hover {
@@ -89,21 +76,29 @@ $breakpoints: (
 
     & li:last-child a::after {
       position: absolute;
-      top: 13px;
-      left: 4px;
+      top: 25px;
+      left: 15px;
       transform: scale(0.8);
       content: url(/assets/icons/contact-link-doodle.svg);
 
       @media (max-width: $sm) {
-        left: -2px;
+        left: 7px;
       }
     }
   }
 }
 
+.nav__bar-logo img {
+  // max-width: 60px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 1rem;
+    // max-width: 40px;
+  }
+}
+
 .hero {
   background-color: $hero;
-  padding: 2vw 10vw;
 
   &__main {
     min-height: 80vh;
@@ -119,10 +114,6 @@ $breakpoints: (
 
     &-greeting {
       animation: fadeIn 0.7s ease-in-out backwards;
-
-      @media (max-width: $xxxl) {
-        max-width: 40px;
-      }
     }
 
     &-description {
@@ -191,7 +182,7 @@ $breakpoints: (
 
 @for $i from 1 through 4 {
   .floating-icon:nth-child(#{$i}) {
-    animation-delay: #{$i * 0.2}s;
+    animation-delay: #{$i * 0.3}s;
   }
 }
 
@@ -223,10 +214,22 @@ $breakpoints: (
   @media (min-width: #{$val}) {
     .floating-icon:nth-child(3) {
       $top: 15%;
-      $right: -10%;
+      $right: -5%;
+
+      @if $val > $sm {
+        $right: 5%;
+      }
 
       @if $val > $md {
-        $right: 20%;
+        $right: 15%;
+      }
+
+      @if $val > $xxl {
+        $right: 22%;
+      }
+
+      @if $val > $xxxl {
+        $right: 25%;
       }
 
       top: $top;
@@ -241,8 +244,16 @@ $breakpoints: (
       $top: 55%;
       $right: -5%;
 
+      @if $val > $sm {
+        $right: 10%;
+      }
+
       @if $val > $md {
-        $right: 22%;
+        $right: 17%;
+      }
+
+      @if $val > $xxl {
+        $right: 23%;
       }
 
       top: $top;
