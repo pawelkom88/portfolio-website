@@ -5,7 +5,7 @@
   "description": "Pawel Komorkiewicz Front End Dev portfolio",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel index.html && parcel watch index.html",
     "build": "parcel build"
   },
   "author": "Pawel Komorkiewicz",
