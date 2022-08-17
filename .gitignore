@@ -2,4 +2,9 @@
 /.parcel-cache
 /dist
 /assets
+/robots.txt
+/sitemap.xml
+/src/robots.txt
+/src/sitemap.xml
 /design
+
