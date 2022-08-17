@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-ExtraLight.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-SemiBold.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-ExtraBold.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/assets/fonts/Mulish-Black.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.projects {
+  background-color: #f0f4f7;
+  padding: 0 15%;
+}
+@media (max-width: 768px) {
+  .projects {
+    padding-top: 2rem;
+  }
+}
+.projects__card {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 5rem;
+}
+@media (max-width: 992px) {
+  .projects__card {
+    display: none;
+  }
+}
+.projects__card-img {
+  flex-basis: 50%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects__card-desc {
+  flex-basis: 40%;
+  height: 55vh;
+  padding: 7%;
+  background-color: #ffffff;
+  transform: translateY(-5vh);
+  filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
+}
+.projects__card-desc .card-heading {
+  font-size: clamp(0.75rem, 0.3rem + 1.5vw, 3rem);
+  font-weight: 900;
+  color: #feacba;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.projects__card-desc .card-icons {
+  display: flex;
+}
+.projects__card-desc .card-icons * {
+  margin-right: 0.5rem;
+}
+.projects__card-desc .card-btn {
+  font-weight: 200;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  background: none;
+  outline: 1px solid #e5677d;
+  border: 1px solid #e5677d;
+  border-radius: 2rem;
+  outline-offset: -2px;
+  transition: outline-offset 0.1s ease-in-out;
+}
+.projects__card-desc .card-btn:hover, .projects__card-desc .card-btn:focus {
+  outline: 1px solid #e5677d;
+  outline-offset: 2px;
+}
+
+.outletity {
+  background-color: #feacba;
+}/*# sourceMappingURL=async.css.map */
