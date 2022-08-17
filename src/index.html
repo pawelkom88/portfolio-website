@@ -29,18 +29,17 @@
       content="https://creative-web.dev/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
 
     <!-- Change !!!!!!!!!!!!!!!! -->
-    <!-- <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" /> -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" />
     <!-- Change !!!!!!!!!!!!!!!! -->
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,200&display=swap"
-      rel="stylesheet" />
 
     <!-- Css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="preload"
+      href="./css/async.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./css/async.css" /></noscript>
 
     <!-- Js -->
     <script type="module" src="./js/index.js"></script>
@@ -51,8 +50,14 @@
         <nav class="nav__bar">
           <a href="index.html">
             <picture class="nav__bar-logo">
-              <source media="(max-width:576px)" srcset="/assets/icons/LOGO-WEBP.webp" />
+              <source
+                width="40"
+                height="39"
+                media="(max-width:576px)"
+                srcset="/assets/icons/LOGO-WEBP.webp" />
               <img
+                width="60"
+                height="58"
                 src="/assets/icons/LOGO.png"
                 srcset="/assets/icons/LOGO.png 1x"
                 alt="logo, red letter p with white stroke" />
@@ -72,7 +77,12 @@
         </nav>
       </header>
       <div class="hero__main">
-        <img class="hero__main-greeting" src="/assets/icons/hi.png" alt="greeting icon hi" />
+        <img
+          width="40"
+          height="28"
+          class="hero__main-greeting"
+          src="/assets/icons/hi.png"
+          alt="greeting icon hi" />
         <p class="hero__main-description">I am Pawel</p>
         <h1 class="hero__main-heading">I design & build UI.</h1>
         <div class="picture-container">
@@ -109,37 +119,111 @@
             <img src="/assets/icons/ux.png" srcset="/assets/icons/ux.png 1x" alt="floating icon" />
           </picture>
           <picture class="hero__main-img">
-            <source media="(max-width:576px)" srcset="/assets/icons/pc.webp" />
+            <source
+              width="150"
+              height="218"
+              media="(max-width:576px)"
+              srcset="/assets/icons/pc.webp" />
             <img
               src="/assets/icons/pc.svg"
-              alt="logo, red letter p with white stroke"
-              sizes="52px" />
+              srcset="/assets/icons/pc.svg 1x"
+              alt="logo, red letter p with white stroke" />
           </picture>
         </div>
         <button class="hero__main-btn">HIGH FIVE !</button>
       </div>
     </section>
-    <img class="divider" src="/assets/img/divider1.svg" alt="divider" />
+    <img class="divider" src="/assets/img/divider1.png" alt="divider" />
     <main>
       <section id="Projects" class="projects">
-        <!-- web component ?? -->
-        <h2 class="heading projects__heading">Projects</h2>
-        <p>Forge while the iron is hot ! Here are my recent efforts that I am proud of.</p>
+        <h2 class="heading">Projects</h2>
+        <p class="description">
+          Forge while the iron is hot ! Here are my recent efforts that I am proud of.
+        </p>
+
+        <div class="projects__card outletity">
+          <div class="projects__card-img">
+            <picture>
+              <source media="(max-width:576px)" srcset="/assets/icons/money-icon-webp.webp" />
+              <!-- <source
+                width="150"
+                height="218"
+                media="(max-width:576px)"
+                srcset="/assets/icons/money-icon-webp.webp" /> -->
+              <img
+                width="400"
+                height="400"
+                loading="lazy"
+                src="/assets/icons/money-icon.png"
+                srcset="/assets/icons/money-icon.png 1x"
+                alt="wad of cash icon" />
+            </picture>
+          </div>
+          <div class="projects__card-desc">
+            <h3 class="card-heading">Outletity</h3>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
+            </p>
+            <div class="card-icons">
+              <picture>
+                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                <img
+                  loading="lazy"
+                  width="35"
+                  height="32"
+                  src="/assets/icons/react-icon.png"
+                  srcset="/assets/icons/react-icon.png 1x"
+                  alt="wad of cash icon" />
+              </picture>
+              <picture>
+                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                <img
+                  loading="lazy"
+                  width="35"
+                  height="32"
+                  src="/assets/icons/firebase-icon.png"
+                  srcset="/assets/icons/firebase-icon.png 1x"
+                  alt="wad of cash icon" />
+              </picture>
+              <picture>
+                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                <img
+                  loading="lazy"
+                  width="35"
+                  height="32"
+                  src="/assets/icons/sass-icon.png"
+                  srcset="/assets/icons/sass-icon.png 1x"
+                  alt="wad of cash icon" />
+              </picture>
+            </div>
+            <button class="card-btn">code</button>
+            <button class="card-btn">app live</button>
+          </div>
+        </div>
+
         <!-- Project1 -->
         <!-- Project2 -->
         <!-- Project3 -->
         <!-- Project4 -->
       </section>
-      <section id="About" class="about">
-        <!-- web component ?? -->
-        <h2 class="heading about__heading">Few words about me</h2>
-        <img src="/assets/icons/about-me-icon.png" alt="doodle icon" />
-        <article>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in repellendus
-          asperiores magnam accusantium est odit aliquam nihil labore ducimus quos maxime, sed vel
-          molestiae? Quisquam, placeat unde.
-        </article>
-      </section>
+      <div>
+        <section id="About" class="about">
+          <h2 class="heading about__heading">Few words about me</h2>
+          <!-- web component ?? -->
+          <picture>
+            <!-- <source media="(max-width:576px)" srcset="/assets/icons/about-me-icon.webp" /> -->
+            <img
+              src="/assets/icons/about-me-icon.png"
+              srcset="/assets/icons/about-me-icon.png 1x"
+              alt="doodle icon" />
+          </picture>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in
+            repellendus asperiores magnam accusantium est odit aliquam nihil labore ducimus quos
+            maxime, sed vel molestiae? Quisquam, placeat unde.
+          </p>
+        </section>
+      </div>
       <section id="Contact" class="contact">
         <!-- web component ?? -->
         <h2 class="heading contact_heading">Give me a shout !</h2>
