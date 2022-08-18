@@ -32,56 +32,48 @@
 }
 .projects {
   background-color: #f0f4f7;
-  padding: 0 15%;
-}
-@media (max-width: 768px) {
-  .projects {
-    padding-top: 2rem;
-  }
+  margin-top: -5vh;
 }
 .projects__card {
-  height: 60vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
-  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 10%;
 }
-@media (max-width: 992px) {
+@media (min-width: 1690px) {
   .projects__card {
-    display: none;
+    max-width: 80%;
+    margin: 5rem auto;
   }
 }
 .projects__card-img {
-  flex-basis: 50%;
-  display: flex;
+  grid-column: 2/7;
+}
+.projects__card-desc {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.projects__card-desc {
-  flex-basis: 40%;
-  height: 55vh;
-  padding: 7%;
+  grid-column: 8/12;
+  font-size: clamp(0.7rem, 0.2rem + 1vw, 1rem);
   background-color: #ffffff;
-  transform: translateY(-5vh);
+  margin-top: -4.5rem;
+  padding: 0 2vw;
   filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
 }
-.projects__card-desc .card-heading {
+.projects__card .card-heading {
   font-size: clamp(0.75rem, 0.3rem + 1.5vw, 3rem);
   font-weight: 900;
-  color: #feacba;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.projects__card-desc .card-icons {
+.projects__card .card-icons {
   display: flex;
 }
-.projects__card-desc .card-icons * {
+.projects__card .card-icons * {
   margin-right: 0.5rem;
 }
-.projects__card-desc .card-btn {
+.projects__card .card-btn {
   font-weight: 200;
   margin-top: 1.5rem;
   padding: 0.5rem 1.5rem;
@@ -93,11 +85,61 @@
   outline-offset: -2px;
   transition: outline-offset 0.1s ease-in-out;
 }
-.projects__card-desc .card-btn:hover, .projects__card-desc .card-btn:focus {
+@media (max-width: 1200px) {
+  .projects__card .card-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 1.2rem;
+  }
+}
+.projects__card .card-btn:hover, .projects__card .card-btn:focus {
   outline: 1px solid #e5677d;
   outline-offset: 2px;
 }
 
+@media (min-width: 1690px) {
+  .heading-projects,
+.description-projects {
+    margin-left: 10%;
+  }
+}
+
 .outletity {
+  margin-top: 15vh;
   background-color: #feacba;
-}/*# sourceMappingURL=async.css.map */
+}
+
+.outletity-heading {
+  color: #feacba;
+}
+
+.photography-heading {
+  color: #ca9ad8;
+}
+
+.array-method {
+  background-color: #f8ce6a;
+}
+
+.array-method-heading {
+  color: #f8ce6a;
+}
+
+.photography {
+  background-color: #ca9ad8;
+}
+
+.notary {
+  background-color: #88ce8f;
+}
+
+.notary-heading {
+  color: #88ce8f;
+}
+
+.reversed-img {
+  grid-column: 8/12;
+}
+
+.reversed-desc {
+  grid-column: 2/6;
+}/*# sourceMappingURL=projects.css.map */
