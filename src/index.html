@@ -36,10 +36,16 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="preload"
-      href="./css/async.css"
+      href="./css/projects.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="./css/async.css" /></noscript>
+    <noscript><link rel="stylesheet" href="./css/projects.css" /></noscript>
+    <link
+      rel="preload"
+      href="./css/about.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./css/about.css" /></noscript>
 
     <!-- Js -->
     <script type="module" src="./js/index.js"></script>
@@ -136,23 +142,22 @@
     <img class="divider" src="/assets/img/divider1.png" alt="divider" />
     <main>
       <section id="Projects" class="projects">
-        <h2 class="heading">Projects</h2>
-        <p class="description">
+        <h2 class="heading heading-projects">Projects</h2>
+        <p class="description description-projects">
           Forge while the iron is hot ! Here are my recent efforts that I am proud of.
         </p>
+        <!-- Project 1 -->
 
         <div class="projects__card outletity">
           <div class="projects__card-img">
             <picture>
               <source media="(max-width:576px)" srcset="/assets/icons/money-icon-webp.webp" />
-              <!-- <source
+              <source
                 width="150"
                 height="218"
                 media="(max-width:576px)"
-                srcset="/assets/icons/money-icon-webp.webp" /> -->
+                srcset="/assets/icons/money-icon-webp.webp" />
               <img
-                width="400"
-                height="400"
                 loading="lazy"
                 src="/assets/icons/money-icon.png"
                 srcset="/assets/icons/money-icon.png 1x"
@@ -160,70 +165,247 @@
             </picture>
           </div>
           <div class="projects__card-desc">
-            <h3 class="card-heading">Outletity</h3>
-            <p class="card-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
-            </p>
-            <div class="card-icons">
-              <picture>
-                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
-                <img
-                  loading="lazy"
-                  width="35"
-                  height="32"
-                  src="/assets/icons/react-icon.png"
-                  srcset="/assets/icons/react-icon.png 1x"
-                  alt="wad of cash icon" />
-              </picture>
-              <picture>
-                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
-                <img
-                  loading="lazy"
-                  width="35"
-                  height="32"
-                  src="/assets/icons/firebase-icon.png"
-                  srcset="/assets/icons/firebase-icon.png 1x"
-                  alt="wad of cash icon" />
-              </picture>
-              <picture>
-                <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
-                <img
-                  loading="lazy"
-                  width="35"
-                  height="32"
-                  src="/assets/icons/sass-icon.png"
-                  srcset="/assets/icons/sass-icon.png 1x"
-                  alt="wad of cash icon" />
-              </picture>
-            </div>
-            <button class="card-btn">code</button>
-            <button class="card-btn">app live</button>
+            <article class="card-wrapper">
+              <h3 class="card-heading outletity-heading">Outletity</h3>
+              <p class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
+              </p>
+              <div class="card-icons">
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/react-icon.png"
+                    srcset="/assets/icons/react-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/firebase-icon.png"
+                    srcset="/assets/icons/firebase-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/sass-icon.png"
+                    srcset="/assets/icons/sass-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+              </div>
+              <button class="card-btn">code</button>
+              <button class="card-btn">app live</button>
+            </article>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="projects__card array-method">
+          <div class="projects__card-img reversed-img">
+            <picture>
+              <source media="(max-width:576px)" srcset="/assets/icons/magnifer-webp.webp" />
+              <source media="(max-width:576px)" srcset="/assets/icons/magnifer-webp.webp" />
+              <img
+                loading="lazy"
+                src="/assets/icons/magnifer.png"
+                srcset="/assets/icons/magnifer.png 1x"
+                alt="wad of cash icon" />
+            </picture>
+          </div>
+          <div class="projects__card-desc reversed-desc">
+            <article class="card-wrapper">
+              <h3 class="card-heading array-method-heading">Array method finder</h3>
+              <p class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
+              </p>
+              <div class="card-icons">
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/react-icon.png"
+                    srcset="/assets/icons/react-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/firebase-icon.png"
+                    srcset="/assets/icons/firebase-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/sass-icon.png"
+                    srcset="/assets/icons/sass-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+              </div>
+              <button class="card-btn">code</button>
+              <button class="card-btn">app live</button>
+            </article>
           </div>
         </div>
 
-        <!-- Project1 -->
-        <!-- Project2 -->
-        <!-- Project3 -->
-        <!-- Project4 -->
+        <!-- Project 3 -->
+
+        <div class="projects__card photography">
+          <div class="projects__card-img">
+            <picture>
+              <source media="(max-width:576px)" srcset="/assets/icons/camera-webp.webp" />
+              <source
+                width="150"
+                height="218"
+                media="(max-width:576px)"
+                srcset="/assets/icons/camera-webp.webp" />
+              <img
+                loading="lazy"
+                src="/assets/icons/camera.png"
+                srcset="/assets/icons/camera.png 1x"
+                alt="wad of cash icon" />
+            </picture>
+          </div>
+          <div class="projects__card-desc">
+            <article class="card-wrapper">
+              <h3 class="card-heading photography-heading">Photography website</h3>
+              <p class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
+              </p>
+              <div class="card-icons">
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/react-icon.png"
+                    srcset="/assets/icons/react-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/firebase-icon.png"
+                    srcset="/assets/icons/firebase-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/sass-icon.png"
+                    srcset="/assets/icons/sass-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+              </div>
+              <button class="card-btn">code</button>
+              <button class="card-btn">app live</button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+
+        <div class="projects__card notary">
+          <div class="projects__card-img reversed-img">
+            <picture>
+              <source media="(max-width:576px)" srcset="/assets/icons/stamp-webp.webp" />
+              <source
+                width="150"
+                height="218"
+                media="(max-width:576px)"
+                srcset="/assets/icons/stamp-webp.webp" />
+              <img
+                loading="lazy"
+                src="/assets/icons/stamp.png"
+                srcset="/assets/icons/stamp.png 1x"
+                alt="wad of cash icon" />
+            </picture>
+          </div>
+          <div class="projects__card-desc reversed-desc">
+            <article class="card-wrapper">
+              <h3 class="card-heading notary-heading">Notary website</h3>
+              <p class="card-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequuntur!
+              </p>
+              <div class="card-icons">
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/react-icon.png"
+                    srcset="/assets/icons/react-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/firebase-icon.png"
+                    srcset="/assets/icons/firebase-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+                <picture>
+                  <source media="(max-width:576px)" srcset="/assets/icons/react-icon.webp" />
+                  <img
+                    loading="lazy"
+                    width="35"
+                    height="32"
+                    src="/assets/icons/sass-icon.png"
+                    srcset="/assets/icons/sass-icon.png 1x"
+                    alt="wad of cash icon" />
+                </picture>
+              </div>
+              <button class="card-btn">code</button>
+              <button class="card-btn">app live</button>
+            </article>
+          </div>
+        </div>
       </section>
-      <div>
-        <section id="About" class="about">
-          <h2 class="heading about__heading">Few words about me</h2>
-          <!-- web component ?? -->
-          <picture>
-            <!-- <source media="(max-width:576px)" srcset="/assets/icons/about-me-icon.webp" /> -->
-            <img
-              src="/assets/icons/about-me-icon.png"
-              srcset="/assets/icons/about-me-icon.png 1x"
-              alt="doodle icon" />
-          </picture>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in
-            repellendus asperiores magnam accusantium est odit aliquam nihil labore ducimus quos
-            maxime, sed vel molestiae? Quisquam, placeat unde.
-          </p>
-        </section>
-      </div>
+
+      <section id="About" class="about">
+        <h2 class="heading about__heading">Few words about me</h2>
+        <!-- web component ?? -->
+        <picture>
+          <!-- <source media="(max-width:576px)" srcset="/assets/icons/about-me-icon.webp" /> -->
+          <img
+            src="/assets/icons/about-me-icon.png"
+            srcset="/assets/icons/about-me-icon.png 1x"
+            alt="doodle icon" />
+        </picture>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in repellendus
+          asperiores magnam accusantium est odit aliquam nihil labore ducimus quos maxime, sed vel
+          molestiae? Quisquam, placeat unde.
+        </p>
+      </section>
+
       <section id="Contact" class="contact">
         <!-- web component ?? -->
         <h2 class="heading contact_heading">Give me a shout !</h2>

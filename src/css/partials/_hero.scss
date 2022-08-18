@@ -89,16 +89,14 @@ $breakpoints: (
 }
 
 .nav__bar-logo img {
-  // max-width: 60px;
-
   @media (max-width: $sm) {
     margin-bottom: 1rem;
-    // max-width: 40px;
   }
 }
 
 .hero {
   background-color: $hero;
+  padding-top: 4vh;
 
   &__main {
     min-height: 80vh;

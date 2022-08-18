@@ -185,6 +185,7 @@ select {
 
 .hero {
   background-color: #a1ccdd;
+  padding-top: 4vh;
 }
 .hero__main {
   min-height: 80vh;
@@ -576,7 +577,7 @@ h2 {
 
 section {
   min-height: 100vh;
-  padding: 2vw 10vw;
+  padding: 8vw 15vw;
 }
 
 .heading {
