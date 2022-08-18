@@ -1,24 +1,33 @@
-@import "./partials/colors";
-@import "./partials/fonts";
-@import "./partials/breakpoints";
-@import "./partials/mixins";
+@import "../partials/colors";
+@import "../partials/fonts";
+@import "../partials/breakpoints";
+@import "../partials/mixins";
 
 .projects {
-  background-color: #f0f4f7;
+  background-color: $light-grey2;
   margin-top: -5vh;
 
   &__card {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 10%;
+    margin: 8rem auto;
 
     @media (min-width: $xxxl) {
       max-width: 80%;
-      margin: 5rem auto;
     }
 
     &-img {
       grid-column: 2/7;
+      transform: perspective(1000px) rotateY(15deg);
+      transition: transform 0.5s ease-in-out 0s;
+
+      &:hover {
+        transform: perspective(3000px) rotateY(5deg);
+      }
+    }
+
+    &-img:not(:first-child) {
+      padding: 2rem 0;
     }
 
     &-desc {
@@ -28,12 +37,12 @@
       font-size: clamp(0.7rem, 0.2rem + 1vw, 1rem);
       background-color: $white;
       margin-top: -4.5rem;
-      padding: 0 2vw;
+      padding: 0 3vw;
       filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
     }
 
     & .card-heading {
-      font-size: clamp(0.75rem, 0.3rem + 1.5vw, 3rem);
+      font-size: clamp(0.75rem, 0.3rem + 1.1vw, 3rem);
       font-weight: 900;
       margin-bottom: 1rem;
       text-transform: uppercase;
@@ -49,16 +58,11 @@
     }
 
     & .card-btn {
-      $clr: $pinkish;
-      $outline: 1px solid $clr;
-
       font-weight: $extra-light;
       margin-top: 1.5rem;
       padding: 0.5rem 1.5rem;
       margin-right: 1rem;
       background: none;
-      outline: $outline;
-      border: $outline;
       border-radius: 2rem;
       outline-offset: -2px;
       transition: outline-offset 0.1s ease-in-out;
@@ -68,10 +72,56 @@
         padding: 0.2rem 1.2rem;
       }
 
-      &:hover,
-      &:focus {
+      &-outletity {
+        $clr: $pinkish;
+        $outline: 1px solid $clr;
         outline: $outline;
-        outline-offset: 2px;
+        border: $outline;
+
+        &:hover,
+        &:focus {
+          outline: $outline;
+          outline-offset: 2px;
+        }
+      }
+
+      &-array {
+        $clr: $yellow-secondary;
+        $outline: 1px solid $clr;
+        outline: $outline;
+        border: $outline;
+
+        &:hover,
+        &:focus {
+          outline: $outline;
+          outline-offset: 2px;
+        }
+      }
+
+      &-photography {
+        $clr: $purpleish;
+        $outline: 1px solid $clr;
+        outline: $outline;
+        border: $outline;
+
+        &:hover,
+        &:focus {
+          outline: $outline;
+          outline-offset: 2px;
+        }
+      }
+
+      &-notary {
+        $clr: $greenish;
+        $outline: 1px solid $clr;
+        outline: $outline;
+        border: $outline;
+
+        &:hover,
+        &:focus {
+          outline: $outline;
+          outline-offset: 2px;
+        }
       }
     }
   }

@@ -27,54 +27,33 @@ $breakpoints: (
   &-links {
     display: flex;
 
-    & li a {
+    & li {
+      position: relative;
       font-size: clamp(1rem, calc(12px + 1vw), 1.25rem);
       font-weight: $bold;
       padding: 0.8rem 1.7rem;
       cursor: pointer;
 
-      &:hover {
-        color: $light-grey;
-        // background-image: linear-gradient(
-        //   to right,
-        //   $white 0%,
-        //   transparent 50%,
-        //   #e24f55,
-        //   #dc6e40,
-        //   #cd8a37,
-        //   #baa242,
-        //   #a4b75d,
-        //   #a3bf69,
-        //   #a3c875,
-        //   #a2d081,
-        //   #b7d178,
-        //   #ccd171,
-        //   #e2d06c,
-        //   #f8ce6c
-        // );
+      &:hover:after {
+        content: url(/assets/icons/arrow.png);
+        position: absolute;
+        top: 2rem;
+      }
+
+      &:first-of-type:hover::after {
+        left: 2.6rem;
+      }
+
+      &:nth-of-type(2):hover::after {
+        left: 2rem;
       }
     }
-
-    // a {
-    //   background-color: $white;
-    //   background-image: linear-gradient(left, $light-grey 0%, orange 50%, transparent 50%);
-    //   background-position: 100% 0;
-    //   background-size: 200% 200%;
-    //   color: transparent;
-    //   -webkit-transition: 0.1s 0.2s;
-    //   -webkit-background-clip: text;
-    // }
-    // a:hover {
-    //   background-position: 0 0;
-    //   color: transparent;
-    //   transition: 0.4s 0;
-    // }
 
     & li a:last-child {
       position: relative;
     }
 
-    & li:last-child a::after {
+    & li:last-child::after {
       position: absolute;
       top: 25px;
       left: 15px;
@@ -88,9 +67,22 @@ $breakpoints: (
   }
 }
 
+svg .svg-elem-1 {
+}
+
+svg.active .svg-elem-1 {
+  stroke-dashoffset: 0;
+}
+
 .nav__bar-logo img {
+  transition: transform 0.1s ease-in-out;
   @media (max-width: $sm) {
     margin-bottom: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
   }
 }
 
@@ -107,7 +99,7 @@ $breakpoints: (
     text-align: center;
 
     & * {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
 
     &-greeting {
@@ -126,15 +118,6 @@ $breakpoints: (
       text-shadow: 2px 2px 2px $redish;
       animation: fadeIn 1.1s ease-in-out backwards;
       padding-bottom: 2rem;
-    }
-
-    &-img img {
-      margin: 2rem auto;
-      animation: fadeIn 1.3s ease-in-out backwards;
-
-      @media (max-width: $sm) {
-        max-width: 150px;
-      }
     }
 
     &-btn {
@@ -190,6 +173,10 @@ $breakpoints: (
       $top: 10%;
       $left: 10%;
 
+      @if $val < $md {
+        $left: -5%;
+      }
+
       top: $top;
       left: $left + ($key * 3.5%);
     }
@@ -202,8 +189,12 @@ $breakpoints: (
       $top: 50%;
       $left: 0%;
 
+      @if $val < $md {
+        $left: -10%;
+      }
+
       top: $top;
-      left: $left + ($key * 4.5%);
+      left: $left + ($key * 5%);
     }
   }
 }
@@ -212,7 +203,7 @@ $breakpoints: (
   @media (min-width: #{$val}) {
     .floating-icon:nth-child(3) {
       $top: 15%;
-      $right: -5%;
+      $right: -10%;
 
       @if $val > $sm {
         $right: 5%;
@@ -263,11 +254,24 @@ $breakpoints: (
 @each $key, $val in $breakpoints {
   @media (min-width: #{$val}) {
     .floating-icon:nth-child(5) {
-      $top: -5%;
+      $top: -13%;
       $left: 40%;
 
       top: $top;
       left: $left + ($key + 1%);
     }
+  }
+}
+
+// SVG ANIMATION
+
+@for $i from 1 through 14 {
+  .svg-elem-#{$i} {
+    animation: animate-svg-fill-#{$i}
+      0.5s
+      cubic-bezier(0.47, 0, 0.745, 0.715)
+      #{($i + 0.1s) /
+      9}
+      both;
   }
 }

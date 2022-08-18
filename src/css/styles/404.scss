@@ -1,0 +1,23 @@
+@import "../partials/colors";
+@import "../partials/mixins";
+@import "../partials/fonts";
+
+body {
+  min-height: 100vh;
+  font-family: "Mulish", sans-serif;
+  @include flex(center, center);
+  flex-direction: column;
+  background-color: $light-grey;
+}
+
+img {
+  display: block;
+  max-width: 50%;
+}
+
+h1,
+h2 {
+  font-size: clamp(1rem, 0.5rem + 3vw, 4rem);
+  font-weight: $extra-bold;
+  color: $redish;
+}
