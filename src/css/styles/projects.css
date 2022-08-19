@@ -1,35 +1,3 @@
-@font-face {
-  font-family: "Mulish";
-  font-style: italic;
-  font-weight: 200;
-  font-display: swap;
-  src: url(/assets/fonts/Mulish-ExtraLight.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/Mulish-SemiBold.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(/assets/fonts/Mulish-ExtraBold.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(/assets/fonts/Mulish-Black.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 .projects {
   background-color: #f0f4f7;
   margin-top: -5vh;
@@ -64,7 +32,7 @@
   font-size: clamp(0.7rem, 0.2rem + 1vw, 1rem);
   background-color: #ffffff;
   margin-top: -4.5rem;
-  padding: 0 3vw;
+  padding: 0 2rem;
   filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
 }
 .projects__card .card-heading {
@@ -76,15 +44,16 @@
 }
 .projects__card .card-icons {
   display: flex;
+  margin: 1.2rem 0 2rem 0;
 }
-.projects__card .card-icons * {
-  margin-right: 0.5rem;
+.projects__card .card-icons img {
+  max-width: 25px;
+  margin-right: 0.8rem;
 }
 .projects__card .card-btn {
-  font-weight: 200;
   margin-top: 1.5rem;
+  margin-right: 0.6rem;
   padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
   background: none;
   border-radius: 2rem;
   outline-offset: -2px;
@@ -94,6 +63,7 @@
   .projects__card .card-btn {
     font-size: 0.7rem;
     padding: 0.2rem 1.2rem;
+    margin-right: 0.3rem;
   }
 }
 .projects__card .card-btn-outletity {
