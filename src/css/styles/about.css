@@ -1,1 +1,127 @@
-/*# sourceMappingURL=about.css.map */
+.about {
+  background-color: #feeedd;
+}
+.about__heading {
+  text-align: center;
+}
+.about__icon {
+  max-width: 30px;
+  margin: 2rem auto;
+}
+.about__description {
+  font-size: clamp(0.7rem, 0.2rem + 1.2vw, 1.2rem);
+  font-weight: 500;
+  word-wrap: break-word;
+  line-height: 1.8;
+}
+@media (min-width: 768px) {
+  .about__description {
+    padding: 0 10vw;
+  }
+}
+@media (min-width: 1400px) {
+  .about__description {
+    padding: 0 15vw;
+  }
+}
+@media (min-width: 768px) {
+  .about__description {
+    text-align: center;
+  }
+}
+.about__me {
+  position: relative;
+  z-index: 2;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 800;
+  overflow: hidden;
+}
+.icons-container code {
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+}
+.icons-container .animation1 {
+  -webkit-animation: 7s ease-out 10s infinite flyUp;
+          animation: 7s ease-out 10s infinite flyUp;
+  align-self: center;
+  margin-right: 30vw;
+}
+.icons-container .animation2 {
+  -webkit-animation: 8s ease-out 8s infinite flyUp1;
+          animation: 8s ease-out 8s infinite flyUp1;
+  align-self: flex-end;
+  margin-right: 5vw;
+}
+
+.red {
+  color: #d9363c;
+}
+
+.green {
+  color: #88ce8f;
+}
+
+.purple {
+  color: #5b18b7;
+}
+
+@-webkit-keyframes flyUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-400%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-700%);
+  }
+}
+
+@keyframes flyUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-400%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-700%);
+  }
+}
+@-webkit-keyframes flyUp1 {
+  20%, 100% {
+    opacity: 0;
+    transform: translateY(-2200%);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-1800%);
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@keyframes flyUp1 {
+  20%, 100% {
+    opacity: 0;
+    transform: translateY(-2200%);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-1800%);
+  }
+  10% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=about.css.map */

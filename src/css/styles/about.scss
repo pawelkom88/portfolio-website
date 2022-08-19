@@ -1,2 +1,108 @@
+@import "../partials/colors";
+@import "../partials/breakpoints";
+@import "../partials/mixins";
+
 .about {
+  background-color: $beige;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__icon {
+    max-width: 30px;
+    margin: 2rem auto;
+  }
+
+  &__description {
+    font-size: clamp(0.7rem, 0.2rem + 1.2vw, 1.2rem);
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: 1.8;
+
+    @media (min-width: $md) {
+      padding: 0 10vw;
+    }
+
+    @media (min-width: $xxl) {
+      padding: 0 15vw;
+    }
+
+    @media (min-width: $md) {
+      text-align: center;
+    }
+  }
+
+  &__me {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.icons-container {
+  @include flex(unset, center);
+  flex-direction: column;
+  font-weight: 800;
+  overflow: hidden;
+
+  & code {
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  & .animation1 {
+    animation: 7s ease-out 10s infinite flyUp;
+    align-self: center;
+    margin-right: 30vw;
+  }
+
+  & .animation2 {
+    animation: 8s ease-out 8s infinite flyUp1;
+    align-self: flex-end;
+    margin-right: 5vw;
+  }
+}
+
+.red {
+  color: $redish;
+}
+
+.green {
+  color: $greenish;
+}
+
+.purple {
+  color: $purple;
+}
+
+@keyframes flyUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-400%);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-700%);
+  }
+}
+
+@keyframes flyUp1 {
+  20%,
+  100% {
+    opacity: 0;
+    transform: translateY(-2200%);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-1800%);
+  }
+  10% {
+    opacity: 1;
+  }
 }
