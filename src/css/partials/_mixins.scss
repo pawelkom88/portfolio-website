@@ -3,3 +3,21 @@
   justify-content: $x;
   align-items: $y;
 }
+
+
+@mixin about-me-animation($name, $value1, $value2) {
+  @keyframes #{$name} {
+    50%,
+    100% {
+      opacity: 0;
+      transform: translateY($value1);
+    }
+    0% {
+      opacity: 0;
+      transform: translateY($value2);
+    }
+    10% {
+      opacity: 1;
+    }
+  }
+}
