@@ -8,6 +8,7 @@
 
   &__card {
     display: grid;
+    height: 400px;
     grid-template-columns: repeat(12, 1fr);
     margin: 8rem auto;
 
@@ -74,7 +75,7 @@
       }
 
       &-outletity {
-        $clr: $pinkish;
+        $clr: $purpleish;
         $outline: 1px solid $clr;
         outline: $outline;
         border: $outline;
@@ -100,7 +101,7 @@
       }
 
       &-photography {
-        $clr: $purpleish;
+        $clr: $pinkish;
         $outline: 1px solid $clr;
         outline: $outline;
         border: $outline;
@@ -137,15 +138,15 @@
 
 .outletity {
   margin-top: 15vh;
-  background-color: $pink;
+  background-color: $purpleish;
 }
 
 .outletity-heading {
-  color: $pink;
+  color: $purpleish;
 }
 
 .photography-heading {
-  color: $purpleish;
+  color: $pink;
 }
 
 .array-method {
@@ -157,7 +158,7 @@
 }
 
 .photography {
-  background-color: $purpleish;
+  background-color: $pink;
 }
 
 .notary {

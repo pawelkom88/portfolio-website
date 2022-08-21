@@ -4,6 +4,7 @@
 }
 .projects__card {
   display: grid;
+  height: 400px;
   grid-template-columns: repeat(12, 1fr);
   margin: 8rem auto;
 }
@@ -67,11 +68,11 @@
   }
 }
 .projects__card .card-btn-outletity {
-  outline: 1px solid #e5677d;
-  border: 1px solid #e5677d;
+  outline: 1px solid #ca9ad8;
+  border: 1px solid #ca9ad8;
 }
 .projects__card .card-btn-outletity:hover, .projects__card .card-btn-outletity:focus {
-  outline: 1px solid #e5677d;
+  outline: 1px solid #ca9ad8;
   outline-offset: 2px;
 }
 .projects__card .card-btn-array {
@@ -83,11 +84,11 @@
   outline-offset: 2px;
 }
 .projects__card .card-btn-photography {
-  outline: 1px solid #ca9ad8;
-  border: 1px solid #ca9ad8;
+  outline: 1px solid #e5677d;
+  border: 1px solid #e5677d;
 }
 .projects__card .card-btn-photography:hover, .projects__card .card-btn-photography:focus {
-  outline: 1px solid #ca9ad8;
+  outline: 1px solid #e5677d;
   outline-offset: 2px;
 }
 .projects__card .card-btn-notary {
@@ -108,15 +109,15 @@
 
 .outletity {
   margin-top: 15vh;
-  background-color: #feacba;
+  background-color: #ca9ad8;
 }
 
 .outletity-heading {
-  color: #feacba;
+  color: #ca9ad8;
 }
 
 .photography-heading {
-  color: #ca9ad8;
+  color: #feacba;
 }
 
 .array-method {
@@ -128,7 +129,7 @@
 }
 
 .photography {
-  background-color: #ca9ad8;
+  background-color: #feacba;
 }
 
 .notary {

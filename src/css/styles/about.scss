@@ -5,6 +5,14 @@
 .about {
   background-color: $beige;
 
+  @media (max-width: $large) {
+    min-height: 84vh;
+  }
+
+  @media (max-width: $sm) {
+    padding-bottom: 0;
+  }
+
   &__heading {
     text-align: center;
   }
@@ -34,75 +42,47 @@
   }
 
   &__me {
-    position: relative;
-    z-index: 2;
-  }
-}
-
-.icons-container {
-  @include flex(unset, center);
-  flex-direction: column;
-  font-weight: 800;
-  overflow: hidden;
-
-  & code {
-    position: relative;
-    opacity: 0;
+    margin-top: 2rem;
     z-index: 1;
   }
+}
 
-  & .animation1 {
-    animation: 7s ease-out 10s infinite flyUp;
-    align-self: center;
-    margin-right: 30vw;
+.img-overlay {
+  position: relative;
+  margin-top: 2rem;
+  min-height: 40vh;
+}
+
+.about__me,
+.programming-doodles {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.programming-doodles {
+  max-width: 700px;
+  left: 20px;
+
+  @media (max-width: $md) {
+    top: 10px;
   }
 
-  & .animation2 {
-    animation: 8s ease-out 8s infinite flyUp1;
-    align-self: flex-end;
-    margin-right: 5vw;
+  @media (max-width: $sm) {
+    top: 20px;
+    left: 5px;
   }
 }
 
-.red {
-  color: $redish;
+.rotate {
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-.green {
-  color: $greenish;
-}
-
-.purple {
-  color: $purple;
-}
-
-@keyframes flyUp {
-  0% {
-    opacity: 0;
-    transform: translateY(-400%);
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-700%);
-  }
-}
-
-@keyframes flyUp1 {
-  20%,
-  100% {
-    opacity: 0;
-    transform: translateY(-2200%);
-  }
-  0% {
-    opacity: 0;
-    transform: translateY(-1800%);
-  }
-  10% {
-    opacity: 1;
-  }
-}
+// @for $i from 1 through 9 {
+//   .rotate:nth-child(#{$i}) {
+//     transform: translate3d(0px, 40.1992px, 0px) rotate(-10.7198deg);
+//   }
+// }
