@@ -1,15 +1,9 @@
-// const pictureContainer = document.querySelector(".picture-container");
+// open modal
+const formBtn = document.querySelector(".form_btn");
 
-// // get current width and height based on window size;
-// var ro = new ResizeObserver(entries => {
-//   for (let entry of entries) {
-//     const cr = entry.contentRect;
-//     // set css variables accordingly
-//     pictureContainer.style.setProperty("--width", cr.width);
-//     pictureContainer.style.setProperty("--height", cr.height);
-//   }
-// });
+// hide email from spam bots
+const email = document.querySelector(".reveal-email");
 
-// // Observe element for changes
-// ro.observe(pictureContainer);
-
+email.addEventListener("click", () => {
+  email.setAttribute("href", "mailto:pawel.komorkiewicz@yahoo.co.uk");
+});

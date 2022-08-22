@@ -1,6 +1,5 @@
 @import "../partials/colors";
 @import "../partials/mixins";
-@import "../partials/fonts";
 
 body {
   min-height: 100vh;
@@ -18,6 +17,6 @@ img {
 h1,
 h2 {
   font-size: clamp(1rem, 0.5rem + 3vw, 4rem);
-  font-weight: $extra-bold;
+  font-weight:900;
   color: $redish;
 }

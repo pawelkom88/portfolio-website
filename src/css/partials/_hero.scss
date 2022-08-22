@@ -30,9 +30,13 @@ $breakpoints: (
     & li {
       position: relative;
       font-size: clamp(1rem, calc(12px + 1vw), 1.25rem);
-      font-weight: $bold;
+      font-weight: 800;
       padding: 0.8rem 1.7rem;
       cursor: pointer;
+
+      @media (max-width: $x-sm) {
+        padding: 0.8rem 1.2rem;
+      }
 
       &:hover:after {
         content: url(/assets/icons/arrow.png);
@@ -60,8 +64,12 @@ $breakpoints: (
       transform: scale(0.8);
       content: url(/assets/icons/contact-link-doodle.svg);
 
-      @media (max-width: $sm) {
-        left: 7px;
+      @media (max-width: $md) {
+        left: 12px;
+      }
+
+      @media (max-width: $x-sm) {
+        left: 0;
       }
     }
   }
@@ -105,67 +113,16 @@ svg.active .svg-elem-1 {
 
     &-description {
       font-size: clamp(1rem, calc(12px + 0.6vw), 1.8rem);
-      font-weight: $semi-bold;
+      font-weight: 600;
       animation: fadeIn 0.9s ease-in-out backwards;
     }
 
     &-heading {
       font-size: clamp(2.55rem, calc(12px + 3vw), 8rem);
-      font-weight: $bold;
+      font-weight: 800;
       text-shadow: 2px 2px 2px $redish;
       animation: fadeIn 1.1s ease-in-out backwards;
       padding-bottom: 2rem;
-    }
-
-    &-btn {
-      position: relative;
-      color: $white;
-      font-weight: $semi-bold;
-      letter-spacing: 1px;
-      background-color: $redish;
-      border: none;
-      border-radius: 1rem;
-      padding: 0.8rem 2rem;
-      margin-top: 2rem;
-      animation: fade 1.4s ease-in-out backwards;
-      cursor: pointer;
-      // overflow: hidden;
-
-      &::before,
-      // &::after {
-      //   position: absolute;
-      //   top: -5px;
-      // }
-
-      // &::before {
-      //   content: url(/assets/icons/hand1.svg);
-      //   right: 0;
-      //   transform: translateX(58px);
-      // }
-
-      // &::after {
-      //   content: url(/assets/icons/hand2.svg);
-      //   left: 0;
-      //   transform: translateX(-58px);
-      // }
-
-      // &:hover::before,
-      // &:hover::after {
-      //   transition: transform 0.3s ease-out;
-      // }
-
-      // &:hover::after {
-      //   transform: translateX(32px);
-      // }
-
-      // &:hover::before {
-      //   transform: translateX(-32px);
-      // }
-
-      &:active {
-        transform: translateY(2px);
-        transition: transform 0.5s ease-out;
-      }
     }
   }
 }

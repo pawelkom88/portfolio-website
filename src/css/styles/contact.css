@@ -1,0 +1,86 @@
+.contact {
+  min-height: 0;
+  background-color: #88ce8f;
+}
+.contact__heading {
+  color: #ffffff;
+}
+.contact__heading span {
+  color: #f8ce6a;
+}
+.contact__description {
+  color: #ffffff;
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  margin-top: 4vh;
+}
+@media (max-width: 992px) {
+  .contact__form {
+    flex-direction: column;
+  }
+}
+.contact__form-img {
+  flex-basis: 50%;
+  padding: 5rem 0;
+  background: #f5cbf7;
+}
+@media (max-width: 992px) {
+  .contact__form-img {
+    order: 1;
+  }
+}
+.contact__form-details {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  background: #ffffff;
+  padding: 5vw;
+}
+@media (max-width: 992px) {
+  .contact__form-details {
+    order: 0;
+  }
+}
+.contact__form-details label {
+  margin: 0.7rem 0;
+}
+.contact__form-details input,
+.contact__form-details textarea {
+  border: none;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-color: #f0f4f7;
+  padding: 1rem;
+}
+.contact__form-details input:focus,
+.contact__form-details textarea:focus {
+  outline: 2px solid #f5cbf7;
+  outline-style: dotted;
+}
+.contact__form-details input[id=name] {
+  background-image: url(/assets/icons/name.png);
+}
+.contact__form-details input[id=e-mail] {
+  background-image: url(/assets/icons/email.png);
+  background-size: 25px;
+}
+.contact__form-details textarea {
+  background-image: url(/assets/icons/message.png);
+  background-size: 23px;
+  background-position: 95% 90%;
+}
+.contact__form-details input {
+  min-height: 5vh;
+}
+.contact__form .form_btn {
+  margin: 2rem auto 0;
+  border-radius: 25px;
+}
+
+.planet {
+  margin: auto;
+}/*# sourceMappingURL=contact.css.map */

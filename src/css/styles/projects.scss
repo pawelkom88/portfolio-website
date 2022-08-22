@@ -12,14 +12,27 @@
     grid-template-columns: repeat(12, 1fr);
     margin: 8rem auto;
 
+    @media (max-width: $large) {
+      display: flex;
+      flex-direction: column;
+      margin: 4rem auto;
+      height: auto;
+    }
+
     @media (min-width: $xxxl) {
       max-width: 80%;
     }
 
     &-img {
+      @include flex(center, center);
       grid-column: 2/7;
       transform: perspective(1000px) rotateY(15deg);
       transition: transform 0.5s ease-in-out 0s;
+
+      @media (max-width: $large) {
+        height: 250px;
+        transform: none;
+      }
 
       &:hover {
         transform: perspective(3000px) rotateY(5deg);
@@ -39,10 +52,20 @@
       margin-top: -4.5rem;
       padding: 0 2rem;
       filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
+
+      @media (max-width: $large) {
+        min-height: 250px;
+        margin: 0;
+        filter: none;
+      }
+
+      @media (max-width: $xl) {
+        padding: 0 1rem;
+      }
     }
 
     & .card-heading {
-      font-size: clamp(0.75rem, 0.3rem + 1.1vw, 3rem);
+      font-size: clamp(0.8rem, 0.3rem + 1.1vw, 3rem);
       font-weight: 900;
       margin-bottom: 1rem;
       text-transform: uppercase;
@@ -53,6 +76,11 @@
       display: flex;
       margin: 1.2rem 0 2rem 0;
 
+      @media (max-width: $large) {
+        justify-content: center;
+        align-items: center;
+      }
+
       & img {
         max-width: 25px;
         margin-right: 0.8rem;
@@ -60,9 +88,10 @@
     }
 
     & .card-btn {
+      font-size: 0.7rem;
       margin-top: 1.5rem;
-      margin-right: 0.6rem;
-      padding: 0.5rem 1.5rem;
+      margin-right: 0.3rem;
+      padding: 0.4rem 1rem;
       background: none;
       border-radius: 2rem;
       outline-offset: -2px;
@@ -70,6 +99,12 @@
 
       @media (max-width: $xl) {
         font-size: 0.7rem;
+        padding: 0.2rem 1rem;
+        margin-right: 0.2rem;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 0.5rem;
         padding: 0.2rem 1.2rem;
         margin-right: 0.3rem;
       }
@@ -77,7 +112,6 @@
       &-outletity {
         $clr: $purpleish;
         $outline: 1px solid $clr;
-        outline: $outline;
         border: $outline;
 
         &:hover,
@@ -90,7 +124,6 @@
       &-array {
         $clr: $yellow-secondary;
         $outline: 1px solid $clr;
-        outline: $outline;
         border: $outline;
 
         &:hover,
@@ -103,7 +136,6 @@
       &-photography {
         $clr: $pinkish;
         $outline: 1px solid $clr;
-        outline: $outline;
         border: $outline;
 
         &:hover,
@@ -116,7 +148,6 @@
       &-notary {
         $clr: $greenish;
         $outline: 1px solid $clr;
-        outline: $outline;
         border: $outline;
 
         &:hover,
@@ -126,6 +157,18 @@
         }
       }
     }
+  }
+}
+
+.card-wrapper {
+  @media (max-width: $large) {
+    text-align: center;
+  }
+}
+
+.heading-projects {
+  @media (max-width: $large) {
+    margin-top: 1.5rem;
   }
 }
 
@@ -139,6 +182,10 @@
 .outletity {
   margin-top: 15vh;
   background-color: $purpleish;
+
+  @media (max-width: $large) {
+    margin-top: 5vh;
+  }
 }
 
 .outletity-heading {
@@ -171,8 +218,22 @@
 
 .reversed-img {
   grid-column: 8/12;
+
+  @media (max-width: $large) {
+    order: 0;
+  }
 }
 
 .reversed-desc {
   grid-column: 2/6;
+
+  @media (max-width: $large) {
+    order: 1;
+  }
+}
+
+.height {
+  @media (max-width: $large) {
+    height: 100%;
+  }
 }

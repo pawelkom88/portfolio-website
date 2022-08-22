@@ -50,6 +50,22 @@
     <noscript>
       <link rel="stylesheet" href="./css/styles/about.css" />
     </noscript>
+    <link
+      rel="preload"
+      href="./css/styles/contact.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="./css/styles/contact.css" />
+    </noscript>
+    <link
+      rel="preload"
+      href="./css/styles/footer.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="./css/styles/footer.css" />
+    </noscript>
     <!-- Js -->
     <script type="module" src="./js/index.js"></script>
   </head>
@@ -215,7 +231,7 @@
             </g>
           </svg>
         </div>
-        <button type="button" class="hero__main-btn">HIGH FIVE !</button>
+        <a href="#" class="btn">Resume</a>
       </div>
     </section>
     <!-- Hero section end -->
@@ -230,7 +246,7 @@
         <!-- Project 1 -->
         <div class="projects__card outletity">
           <div class="projects__card-img">
-            <picture>
+            <picture class="height">
               <source media="(max-width:576px)" srcset="/assets/icons/basket.webp" />
               <source
                 width="150"
@@ -238,10 +254,11 @@
                 media="(max-width:576px)"
                 srcset="/assets/icons/basket.webp" />
               <img
+                class="height"
                 loading="lazy"
                 src="/assets/icons/basket.png"
                 srcset="/assets/icons/basket.png 1x"
-                alt="wad of cash icon" />
+                alt="yellow basket" />
             </picture>
           </div>
           <div class="projects__card-desc">
@@ -255,31 +272,31 @@
                   loading="lazy"
                   src="/assets/icons/react.svg"
                   srcset="/assets/icons/react-icon.png 1x"
-                  alt="wad of cash icon" />
+                  alt="react icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/firebase.svg"
                   srcset="/assets/icons/firebase.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="firebase icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/sass.svg"
                   srcset="/assets/icons/sass.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="sass icon" />
               </div>
               <a
                 href="https://github.com/pawelkom88/outletity"
                 class="card-btn card-btn-outletity"
                 target="_blank"
                 rel="noopener"
-                >code</a
+                >repository</a
               >
               <a
                 href="https://outletity-store.netlify.app/"
                 class="card-btn card-btn-outletity"
                 target="_blank"
                 rel="noopener"
-                >app live</a
+                >lunch project</a
               >
             </article>
           </div>
@@ -297,50 +314,50 @@
                   loading="lazy"
                   src="/assets/icons/react.svg"
                   srcset="/assets/icons/react-icon.png 1x"
-                  alt="wad of cash icon" />
+                  alt="react icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/firebase.svg"
                   srcset="/assets/icons/firebase.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="firebase icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/sass.svg"
                   srcset="/assets/icons/sass.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="sass icon" />
               </div>
               <a
                 href="https://github.com/pawelkom88/array-method-finder"
                 class="card-btn card-btn-array"
                 target="_blank"
                 rel="noopener"
-                >code</a
+                >repository</a
               >
               <a
                 href="https://array-method-finder.netlify.app/"
                 class="card-btn card-btn-array"
                 target="_blank"
                 rel="noopener"
-                >app live</a
+                >lunch project</a
               >
             </article>
           </div>
           <div class="projects__card-img reversed-img">
-            <picture>
-              <source media="(max-width:576px)" srcset="/assets/icons/magnifer-webp.webp" />
+            <picture class="height">
               <source media="(max-width:576px)" srcset="/assets/icons/magnifer-webp.webp" />
               <img
+                class="height"
                 loading="lazy"
                 src="/assets/icons/magnifer.png"
                 srcset="/assets/icons/magnifer.png 1x"
-                alt="wad of cash icon" />
+                alt="magnifer icon" />
             </picture>
           </div>
         </div>
         <!-- Project 3 -->
         <div class="projects__card photography">
           <div class="projects__card-img">
-            <picture>
+            <picture class="height">
               <source media="(max-width:576px)" srcset="/assets/icons/camera.webp" />
               <source
                 width="350"
@@ -348,10 +365,11 @@
                 media="(max-width:576px)"
                 srcset="/assets/icons/camera.webp" />
               <img
+                class="height"
                 loading="lazy"
                 src="/assets/icons/camera.png"
                 srcset="/assets/icons/camera.png 1x"
-                alt="wad of cash icon" />
+                alt="camera" />
             </picture>
           </div>
           <div class="projects__card-desc">
@@ -365,31 +383,31 @@
                   loading="lazy"
                   src="/assets/icons/html.svg"
                   srcset="/assets/icons/html.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="html icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/css3.svg"
                   srcset="/assets/icons/css3.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="css icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/javascript.svg"
                   srcset="/assets/icons/javascript.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="java script icon" />
               </div>
               <a
                 href="https://github.com/pawelkom88/danka-photography-website"
                 class="card-btn card-btn-photography"
                 target="_blank"
                 rel="noopener"
-                >code</a
+                >repository</a
               >
               <a
                 href="https://dankadzurisovaphotography.netlify.app/"
                 class="card-btn card-btn-photography"
                 target="_blank"
                 rel="noopener"
-                >app live</a
+                >lunch project</a
               >
             </article>
           </div>
@@ -407,26 +425,28 @@
                   loading="lazy"
                   src="/assets/icons/html.svg"
                   srcset="/assets/icons/html.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="html icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/css3.svg"
                   srcset="/assets/icons/css3.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="css icon" />
                 <img
                   loading="lazy"
                   src="/assets/icons/javascript.svg"
                   srcset="/assets/icons/javascript.svg 1x"
-                  alt="wad of cash icon" />
+                  alt="javascript icon" />
               </div>
-              <a href="#" class="card-btn card-btn-notary" target="_blank" rel="noopener">code</a>
               <a href="#" class="card-btn card-btn-notary" target="_blank" rel="noopener"
-                >app live</a
+                >repository</a
+              >
+              <a href="#" class="card-btn card-btn-notary" target="_blank" rel="noopener"
+                >lunch project</a
               >
             </article>
           </div>
           <div class="projects__card-img reversed-img">
-            <picture>
+            <picture class="height">
               <source media="(max-width:576px)" srcset="/assets/icons/stamp-webp.webp" />
               <source
                 width="150"
@@ -434,10 +454,11 @@
                 media="(max-width:576px)"
                 srcset="/assets/icons/stamp-webp.webp" />
               <img
+                class="height"
                 loading="lazy"
                 src="/assets/icons/stamp.png"
                 srcset="/assets/icons/stamp.png 1x"
-                alt="wad of cash icon" />
+                alt="stamp" />
             </picture>
           </div>
         </div>
@@ -453,16 +474,15 @@
           alt="doodle icon" />
         <p class="about__description">
           I am an easy-going bloke with a passion for web-development. I never stop learning and try
-          to absorb everything related to this field. If I do not code, I read about coding. If I do
-          not read about coding, I watch courses on Front-end Masters. I wish there were 48 hours in
-          a day so I could develop my passion for the guitar and sport even further.
+          to absorb everything related to this field. If I do not repository, I read about coding.
+          If I do not read about coding, I watch courses on Front-end Masters. I wish there were 48
+          hours in a day so I could develop my passion for the guitar and sport even further.
         </p>
         <br />
         <p class="about__description">
           I am currently looking for a job in tech as a web-developer. I believe that the hunger for
           knowledge and determination will lead to success.
         </p>
-
         <div class="img-overlay">
           <picture>
             <source media="(max-width:576px)" srcset="/assets/img/about-me.webp" />
@@ -508,29 +528,64 @@
               d="M578.049 65.712c1.826.304 3.422.384 4.787.24 1.396-.133 2.124-.186 2.185-.16.185.079.211.271.081.578-.13.307-.6.56-1.409.76-1.692.404-3.648.534-5.868.388-.491 3.376-1.46 6.767-2.906 10.173-1.211 2.854-2.692 5.448-4.444 7.782-.993 1.317-2.084 2.266-3.273 2.848-1.157.595-2.304.651-3.439.17-.982-.417-1.475-1.133-1.478-2.149-.031-1.208.119-2.285.448-3.231.52-1.482 1.47-3.849 2.851-7.101s3.293-7.076 5.738-11.47c-.766-1.267-.908-2.468-.426-3.603.495-1.166 1.118-1.951 1.869-2.357.765-.436 1.554-.59 2.369-.46a175.051 175.051 0 0 1 4.173-6.377c1.25-1.75 2.559-3.042 3.926-3.874 1.38-.863 2.499-1.112 3.359-.747.981.417 1.01 1.714.085 3.893-1.458 3.436-4.373 6.762-8.743 9.977.254 1.194.292 2.767.115 4.72Zm-4.199.933c-1.878 3.657-3.852 7.925-5.923 12.804-2.084 4.91-2.865 7.475-2.344 7.696.921.39 2.202-.496 3.845-2.66 1.629-2.132 3.082-4.702 4.359-7.709a44.398 44.398 0 0 0 2.797-9.405c-1.025-.145-1.936-.387-2.734-.726Zm3.621-6.61c1.515-1.095 3.064-2.484 4.647-4.166 1.596-1.712 2.681-3.244 3.254-4.594s.721-2.083.445-2.2c-.491-.209-1.503.683-3.037 2.675-1.503 2.006-3.273 4.767-5.309 8.285Zm-.781 1.84-.472.344-1.226 2.25c.346.291.673.503.98.633.338.143.62.245.848.305.109-1.366.066-2.543-.13-3.531Zm-2.229-2.683c-.525-.042-.905.213-1.14.765-.234.552-.313 1.08-.237 1.583a55.509 55.509 0 0 1 1.377-2.348Zm5.425 14.035 2.465-5.037c1.393-3.284 2.309-5.013 2.746-5.19.437-.177 1.163-.394 2.177-.651 1.058-.275 1.756-.34 2.094-.198.368.157.572.316.612.477.04.162-.018.427-.174.796-.56 1.319-1.419 2.53-2.575 3.633-1.658 2.627-2.872 4.846-3.64 6.656-.768 1.81-.861 2.84-.278 3.087.706.3 1.794.038 3.267-.786 1.472-.824 3.198-2.245 5.178-4.266 1.579-2.95 2.497-4.517 2.754-4.697.289-.167.907-.43 1.856-.788.948-.358 1.637-.445 2.067-.263.46.195.443.876-.052 2.042-.13.307-.476.866-1.038 1.678-.531.825-.989 1.39-1.373 1.698-.702.716-1.998 3.299-3.886 7.748-.352.828-.436 1.282-.252 1.36.535.19 1.53-.148 2.984-1.015 1.468-.898 3.07-2.155 4.806-3.772 1.767-1.604 2.743-2.367 2.927-2.288.215.09.27.26.166.505-.365.859-1.389 2.035-3.074 3.53-4.612 4.125-7.746 5.837-9.403 5.133-1.197-.508-1.998-1.138-2.403-1.889-.124-.306.049-1.011.518-2.116a59.397 59.397 0 0 1 1.701-3.623c-1.868 1.67-3.527 2.848-4.978 3.536-1.437.657-2.77.725-3.997.204-1.197-.508-1.858-1.168-1.983-1.982-.126-.814.137-1.988.788-3.522Zm20.446 10.471-.56 1.447c-.364.859-.792 1.184-1.283.976a8.716 8.716 0 0 1-2-1.175c-.584-.501-.804-.92-.661-1.258.157-.368.748-1.548 1.774-3.539 1.069-2.008 1.826-3.534 2.269-4.577l1.152-2.716c.625-1.472 1.157-2.297 1.594-2.474.437-.176 1.163-.393 2.177-.65 1.045-.245 1.737-.295 2.074-.152.368.156.572.315.612.477.04.162-.011.412-.155.749a12.628 12.628 0 0 1-2.874 4.212c-.895 1.684-1.487 2.863-1.773 3.538.201-.132 1.288-.902 3.261-2.31 1.974-1.406 3.548-2.386 4.724-2.937 1.206-.538 2.131-.67 2.776-.397.644.273 1.12.73 1.429 1.367.339.651.372 1.299.099 1.943-.573 1.35-1.573 3.28-3 5.788-1.384 2.491-2.225 4.09-2.525 4.795-.286.675-.337 1.052-.153 1.13.534.19 1.529-.148 2.984-1.015 1.467-.898 3.069-2.155 4.805-3.772 1.768-1.604 2.743-2.367 2.927-2.288.215.09.27.26.166.505-.365.859-1.389 2.035-3.073 3.53-4.612 4.125-7.747 5.836-9.404 5.133-1.197-.508-1.998-1.138-2.403-1.889-.123-.306.004-.904.381-1.794.391-.92 1.093-2.36 2.106-4.32 1.057-1.978 1.8-3.473 2.23-4.486.43-1.012.46-1.597.092-1.753-.337-.143-1.707.525-4.109 2.004-2.389 1.448-3.754 2.444-4.093 2.988-.64.996-1.162 1.97-1.566 2.92Zm26.111.818 1.365-2.191c.143-.338.166-.69.068-1.058a1.09 1.09 0 0 0-.652-.765c-1.136-.482-2.482-.04-4.04 1.327-1.545 1.336-2.649 2.786-3.314 4.35-.664 1.566-.882 2.976-.655 4.231.241 1.225.822 2.033 1.742 2.423.951.404 1.886.547 2.805.43.919-.117 1.854-.444 2.807-.98 2.005-1.142 3.923-2.59 5.755-4.347.48-.449.834-.77 1.061-.963.257-.18.463-.238.616-.172.184.078.224.24.12.485-.43 1.013-1.297 2.075-2.602 3.187-1.305 1.112-2.365 1.947-3.182 2.505-.773.541-1.703 1.07-2.791 1.586-2.264 1.067-4.546 1.112-6.848.135-1.749-.742-2.823-1.922-3.222-3.54-.356-1.636-.234-3.16.365-4.571 1.484-3.498 3.363-5.833 5.635-7.005 2.315-1.19 4.639-1.29 6.971-.3.982.416 1.638 1.003 1.969 1.759.375.738.425 1.43.152 2.074-.508 1.197-1.101 1.995-1.778 2.396-.677.4-1.322.47-1.936.21-.521-.221-.658-.623-.411-1.206Zm14.368 10.444c-4.612 4.126-7.762 5.831-9.449 5.114-1.657-.703-2.555-1.32-2.692-1.848-.107-.516.315-1.894 1.266-4.134.951-2.24 2.539-5.386 4.766-9.438-1.404-.958-1.95-1.932-1.638-2.923.208-.49.635-.6 1.279-.326.644.274 1.16.637 1.547 1.091a202.81 202.81 0 0 1 3.819-6.31c.339-.543.865-.972 1.577-1.285.713-.313 1.299-.372 1.759-.177.399.17.332.883-.202 2.141-.248.583-1.602 3.177-4.064 7.781.894.198 1.929.276 3.107.232 1.208-.03 1.904-.006 2.088.072.552.234.756.52.613.858-.099.32-.849.508-2.25.566a19.658 19.658 0 0 1-4.282-.406c-2.27 4.324-3.893 7.636-4.87 9.938-.521 1.227-.597 1.919-.229 2.075.566.204 1.575-.128 3.03-.995 1.454-.868 3.05-2.11 4.786-3.726 1.78-1.635 2.763-2.413 2.947-2.335.214.091.27.26.166.505-.365.86-1.39 2.036-3.074 3.53Zm7.712-14.434c.234-.553.727-.904 1.48-1.056.752-.151 1.358-.13 1.819.066.828.352 1.04 1.003.637 1.954-.404.952-1.001 1.676-1.792 2.173-.777.467-1.611.511-2.501.133-.583-.247-.464-1.337.357-3.27Zm-8.317 23.303c-1.196-.508-1.997-1.138-2.403-1.889-.123-.306.095-1.119.655-2.438.56-1.32 1.583-3.475 3.07-6.465 1.53-3.008 2.424-4.602 2.682-4.782.257-.18.928-.439 2.013-.775 1.084-.337 1.841-.414 2.27-.231.461.195.443.876-.052 2.042-.13.306-.476.866-1.038 1.678-.531.824-.988 1.39-1.373 1.698-.828.843-2.154 3.413-3.978 7.708-.351.829-.435 1.282-.251 1.36.535.191 1.529-.147 2.984-1.014 1.467-.898 3.069-2.156 4.806-3.773 1.767-1.603 2.742-2.366 2.926-2.288.215.091.27.26.166.505-.364.86-1.389 2.036-3.073 3.53-4.612 4.126-7.747 5.837-9.404 5.134Zm24.441-1.684c1.397.122 2.384.142 2.962.062l1.397-.222.689-.088c.193-.026.335-.02.427.019.246.104.31.294.193.57-.118.276-.802.565-2.052.867-1.238.272-2.68.384-4.326.337-1.309 2.486-3.007 4.228-5.096 5.224-2.089.996-4.437.941-7.045-.166-1.903-.807-3.041-2.178-3.415-4.111-.362-1.964-.113-3.959.747-5.984.873-2.056 2.291-3.735 4.257-5.037 1.995-1.29 3.944-1.53 5.847-.723 1.119-.249 2.262-.126 3.428.37 1.197.507 2.034 1.605 2.513 3.293.479 1.688.303 3.551-.526 5.589Zm-3.988 1.077-1.696-.611c-1.411-.599-2.432-1.521-3.062-2.767-.617-1.276-.711-2.42-.281-3.432.43-1.013.97-1.816 1.62-2.409-1.762.483-3.295 2.26-4.597 5.327a10.99 10.99 0 0 0-.877 4.625c.054 1.58.74 2.65 2.059 3.21 1.32.56 2.582.444 3.787-.348 1.219-.822 2.234-2.021 3.047-3.595Zm.39-8.851c-.491-.209-.972-.141-1.444.202-.458.312-.798.729-1.02 1.25-.482 1.136-.489 2.22-.021 3.25.498 1.045 1.269 1.788 2.312 2.231l.552.235c.577-1.53.896-3.006.957-4.429.091-1.41-.354-2.323-1.336-2.74Zm7.053 18.094-.559 1.446c-.365.86-.793 1.185-1.284.977a8.753 8.753 0 0 1-2-1.175c-.583-.502-.804-.921-.66-1.258.156-.369.747-1.548 1.773-3.539 1.07-2.008 1.826-3.534 2.269-4.577l1.153-2.716c.625-1.472 1.156-2.297 1.593-2.474.437-.176 1.163-.393 2.177-.65 1.046-.245 1.737-.296 2.075-.152.368.156.572.315.612.477.04.162-.012.411-.155.749a12.634 12.634 0 0 1-2.874 4.212c-.896 1.683-1.487 2.863-1.774 3.538.201-.132 1.288-.902 3.262-2.309 1.973-1.408 3.548-2.387 4.723-2.938 1.206-.538 2.132-.671 2.776-.397a2.721 2.721 0 0 1 1.429 1.367c.34.651.373 1.299.099 1.943-.573 1.35-1.573 3.279-3 5.788-1.383 2.491-2.225 4.089-2.524 4.795-.287.675-.338 1.051-.154 1.13.535.19 1.529-.148 2.984-1.015 1.467-.898 3.069-2.156 4.806-3.772 1.767-1.604 2.742-2.367 2.927-2.289.214.092.27.26.165.505-.364.859-1.389 2.036-3.073 3.53-4.612 4.126-7.747 5.837-9.404 5.134-1.196-.508-1.997-1.138-2.402-1.889-.124-.306.003-.904.381-1.794.39-.92 1.092-2.361 2.105-4.321 1.057-1.977 1.8-3.472 2.23-4.485.43-1.012.461-1.597.093-1.753-.338-.143-1.708.524-4.11 2.003-2.389 1.449-3.753 2.445-4.093 2.989a19.563 19.563 0 0 0-1.566 2.92Zm25.916-2.688.385-.651c.234-.552.029-.965-.615-1.239-.614-.26-1.388-.1-2.323.481-.921.55-1.493 1.086-1.714 1.608-.222.522-.367.949-.436 1.282-.069.333-.118.619-.148.86.014.223.055.512.121.866.067.355.121.613.161.775l.232.859c.085.398.154.662.207.794 2.155-.643 4.683-1.308 7.582-1.996a.732.732 0 0 1 .473.037c.307.131.389.365.246.702a.964.964 0 0 1-.747.607 57.715 57.715 0 0 0-7.308 1.732 6.045 6.045 0 0 1-.355 3.652c-.495 1.166-1.363 1.974-2.604 2.425-1.242.45-2.553.383-3.934-.203-1.38-.586-1.791-1.539-1.231-2.859.404-.951 2.035-1.978 4.894-3.083a16.652 16.652 0 0 0-.457-1.226 53.427 53.427 0 0 1-.491-1.403 35.35 35.35 0 0 1-.28-1.26 4.917 4.917 0 0 1 .319-2.798c.768-1.81 1.97-3.02 3.604-3.63 1.648-.64 3.132-.68 4.451-.12.829.352 1.375.855 1.64 1.511.278.625.32 1.167.124 1.628-.443 1.043-.91 1.46-1.4 1.252-.369-.156-.501-.357-.396-.603Zm-6.795 7.817c-1.748.706-2.785 1.443-3.111 2.21-.312.737-.085 1.268.682 1.593.46.196.922.174 1.385-.064 1.066-.634 1.414-1.88 1.044-3.739Z"
               fill="#E24F55" />
             <path
-              class="rotate"
               d="M336.388 68.302c-1.108.64-2.262.721-3.462.244-1.199-.478-2.146-1.317-2.839-2.518-.72-1.247-1-2.532-.841-3.856.179-1.397.59-2.712 1.233-3.945a68.185 68.185 0 0 0 1.848-3.838c.636-1.353.914-2.899.833-4.638-.034-1.766-.611-3.62-1.731-5.56-1.147-1.985-2.648-3.305-4.503-3.958-1.809-.68-3.684-.46-5.624.66-.831.48-1.403 1.303-1.715 2.468-.364 1.504-.383 3.178-.057 5.022.139 1.52-.277 2.561-1.246 3.121-.555.32-1.114.366-1.677.137a2.7 2.7 0 0 1-1.176-1.077c-1.1-2.013-.872-4.392.683-7.137 1.575-2.819 3.564-4.922 5.965-6.308 2.402-1.387 4.986-1.924 7.753-1.612 2.786.239 4.859 1.536 6.219 3.891 1.333 2.31 2.064 4.536 2.193 6.679.102 2.096-.181 3.953-.848 5.57a40.788 40.788 0 0 1-2.312 4.476c-.801 1.386-1.417 2.665-1.849 3.838-.458 1.127-.5 2.014-.127 2.66.347.6 1.04 1.001 2.079 1.201 1.04.2 1.653.463 1.84.786.16.277.186.909.078 1.895-.109.986-.347 1.586-.717 1.8Zm4.17 11.542c-.693.4-1.496.556-2.41.467-.886-.042-1.623-.572-2.21-1.588-.54-1.043-.531-2.094.026-3.155.577-1.134 1.258-1.928 2.044-2.381.785-.453 1.565-.596 2.339-.427.795.096 1.378.467 1.752 1.113 1.466 2.54.953 4.53-1.541 5.97ZM391.341 64.36c-1.28 0-2.32-.507-3.12-1.52-.8-1.013-1.2-2.213-1.2-3.6 0-1.44.4-2.693 1.2-3.76a11.696 11.696 0 0 1 3.04-2.8 68.265 68.265 0 0 0 3.52-2.4c1.227-.853 2.24-2.053 3.04-3.6.854-1.547 1.28-3.44 1.28-5.68 0-2.293-.64-4.187-1.92-5.68-1.226-1.493-2.96-2.24-5.2-2.24-.96 0-1.866.427-2.72 1.28-1.066 1.12-1.92 2.56-2.56 4.32-.64 1.387-1.52 2.08-2.64 2.08-.64 0-1.146-.24-1.52-.72-.32-.48-.48-.987-.48-1.52.054-2.293 1.44-4.24 4.16-5.84 2.774-1.653 5.547-2.48 8.32-2.48 2.774 0 5.28.827 7.52 2.48 2.294 1.6 3.44 3.76 3.44 6.48 0 2.667-.48 4.96-1.44 6.88-.96 1.867-2.133 3.333-3.52 4.4a40.567 40.567 0 0 1-4.24 2.72c-1.386.8-2.56 1.6-3.52 2.4-.96.747-1.44 1.493-1.44 2.24 0 .693.4 1.387 1.2 2.08.8.693 1.2 1.227 1.2 1.6 0 .32-.293.88-.88 1.68-.586.8-1.093 1.2-1.52 1.2Zm-2.16 12.08c-.8 0-1.573-.267-2.32-.8-.746-.48-1.12-1.307-1.12-2.48.054-1.173.587-2.08 1.6-2.72 1.067-.693 2.054-1.04 2.96-1.04.907 0 1.654.267 2.24.8.64.48.96 1.093.96 1.84 0 2.933-1.44 4.4-4.32 4.4ZM446.999 65.673c-1.108-.64-1.756-1.6-1.942-2.877-.186-1.277.068-2.517.761-3.718.72-1.247 1.693-2.132 2.919-2.656a11.683 11.683 0 0 1 4.033-.905 68.55 68.55 0 0 0 4.248-.318c1.489-.126 2.967-.658 4.433-1.598 1.513-.913 2.829-2.339 3.949-4.279 1.146-1.986 1.539-3.946 1.177-5.879-.316-1.906-1.444-3.42-3.383-4.54-.832-.48-1.83-.564-2.996-.251-1.484.436-2.943 1.257-4.377 2.461-1.248.88-2.356 1.041-3.326.481-.555-.32-.873-.78-.957-1.383a2.694 2.694 0 0 1 .345-1.556c1.192-1.96 3.367-2.953 6.522-2.978 3.229-.045 6.044.626 8.446 2.012 2.401 1.387 4.159 3.356 5.272 5.908 1.186 2.532 1.099 4.976-.261 7.332-1.333 2.31-2.895 4.055-4.687 5.238-1.765 1.136-3.514 1.82-5.248 2.05a40.66 40.66 0 0 1-5.032.236c-1.601 0-3.017.106-4.249.319-1.204.166-1.993.573-2.367 1.22-.346.6-.347 1.4 0 2.4.346 1.001.425 1.663.239 1.986-.16.278-.694.616-1.602 1.015-.908.4-1.547.493-1.917.28Zm-7.91 9.381c-.693-.4-1.23-1.017-1.609-1.853-.407-.789-.317-1.691.27-2.707.632-.99 1.548-1.508 2.745-1.556 1.271-.067 2.298.126 3.084.58.785.453 1.298 1.057 1.54 1.812.314.736.284 1.427-.089 2.074-1.467 2.54-3.447 3.09-5.941 1.65Z"
               fill="#E5677D" />
           </svg>
           <!-- SVG END -->
         </div>
       </section>
-
       <section id="Contact" class="contact">
-        <!-- web component ?? -->
-        <h2 class="heading contact_heading">Give me a shout !</h2>
-        <p>Drop an email</p>
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa in repellendus
-        asperiores magnam accusantium est odit aliquam nihil labore ducimus quos maxime, sed vel
-        molestiae? Quisquam, placeat unde.
+        <h2 class="heading contact__heading">Give me a shout <span>!</span></h2>
+        <p class="contact__description">Drop an email</p>
+        <div class="contact__form">
+          <div class="contact__form-img">
+            <picture>
+              <source media="(max-width:576px)" srcset="/assets/icons/contact-icon-webp.webp" />
+              <img
+                class="planet"
+                src="/assets/icons/contact-icon.png"
+                srcset="/assets/icons/contact-icon.png 1x"
+                loading="lazy"
+                alt="planet Earth icon" />
+            </picture>
+          </div>
+          <div class="contact__form-details">
+            <label for="name">name</label>
+            <input id="name" title="name" type="text" placeholder="" />
+            <label for="e-mail">e-mail</label>
+            <input id="e-mail" title="e-mail" name="e-mail" type="text" placeholder="" />
+            <label for="message">what can I help you with ?</label>
+            <textarea title="message" name="message" id="message" cols="30" rows="10"></textarea>
+            <button class="btn form_btn">SEND</button>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- DIVIDER -->
+    <img class="divider" src="/assets/img/divider2.png" alt="divider" />
     <footer>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat repellendus quos,
-      unde porro molestiae quo fugiat nostrum, blanditiis tempora obcaecati sapiente eius
-      necessitatibus aut sit tempore itaque doloremque? Nostrum!
+      <div class="social__media">
+        <div class="social__media-icons">
+          <a href="https://www.linkedin.com/in/pawel-komorkiewicz/" target="_blank" rel="noopener">
+            <img src="/assets/icons/linkedin.svg" alt="linkedin icon" />
+          </a>
+          <a href="https://github.com/pawelkom88" target="_blank" rel="noopener">
+            <img src="/assets/icons/github.svg" alt="github icon" />
+          </a>
+          <a class="reveal-email" href="mailto:notforbots@a.com" target="_blank" rel="noopener">
+            <img src="/assets/icons/mail.svg" alt="mail icon" />
+          </a>
+        </div>
+        <div class="social__media-description">
+          Design and coded with
+          <img
+            style="display: inline"
+            class="coffee"
+            loading="lazy"
+            src="/assets/icons/cofee-icon.png"
+            alt="coffee cup icon" />
+          by Paw
+        </div>
+      </div>
     </footer>
   </body>
 </html>
