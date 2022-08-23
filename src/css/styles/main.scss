@@ -1,6 +1,5 @@
-@import "../partials/hero";
 @import "../partials/reset";
-@import "../partials/colors";
+@import "../partials/hero";
 
 html {
   scroll-behavior: smooth;
@@ -23,6 +22,10 @@ h2 {
 section {
   min-height: 100vh;
   padding: 8vw 15vw;
+
+  @media (max-width: $large) {
+    padding: 6vw 8vw;
+  }
 }
 
 .heading {
@@ -38,7 +41,27 @@ section {
   width: 100%;
 }
 
-button {
+.btn {
+  position: relative;
   display: inline-block;
+  color: $white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: $redish;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 2rem;
+  margin-top: 2rem;
+  animation: fade 1.4s ease-in-out backwards;
   cursor: pointer;
+
+  &:active {
+    transform: translateY(4px);
+    transition: transform 0.5s ease-out;
+  }
 }
+
+// a:focus,
+// button:focus {
+//   outline: 3px solid $yellow-secondary;
+// }

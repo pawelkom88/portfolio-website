@@ -1,0 +1,26 @@
+@import "../partials/mixins";
+
+.social__media {
+  @include flex(center, center);
+  flex-direction: column;
+  margin-bottom: 4rem;
+
+  &-icons {
+    @include flex(center, center);
+
+    & img {
+      width: 25px;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &-description {
+    font-size: 0.8rem;
+    @include flex(center, center);
+  }
+
+  .coffee {
+    margin: 0 2px;
+  }
+}

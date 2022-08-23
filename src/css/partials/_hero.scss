@@ -4,18 +4,6 @@
 @import "./animations";
 @import "./breakpoints";
 
-$breakpoints: (
-  0: $super-small,
-  1: $x-sm,
-  2: $sm,
-  3: $md,
-  4: $large,
-  5: $xl,
-  6: $xxl,
-  7: $xxxl,
-  8: $xxxxl,
-);
-
 .nav__bar {
   @include flex(space-between, center);
 
@@ -30,9 +18,13 @@ $breakpoints: (
     & li {
       position: relative;
       font-size: clamp(1rem, calc(12px + 1vw), 1.25rem);
-      font-weight: $bold;
+      font-weight: 800;
       padding: 0.8rem 1.7rem;
       cursor: pointer;
+
+      @media (max-width: $x-sm) {
+        padding: 0.8rem 1.2rem;
+      }
 
       &:hover:after {
         content: url(/assets/icons/arrow.png);
@@ -60,15 +52,15 @@ $breakpoints: (
       transform: scale(0.8);
       content: url(/assets/icons/contact-link-doodle.svg);
 
-      @media (max-width: $sm) {
-        left: 7px;
+      @media (max-width: $md) {
+        left: 12px;
+      }
+
+      @media (max-width: $x-sm) {
+        left: 0;
       }
     }
   }
-}
-
-svg.active .svg-elem-1 {
-  stroke-dashoffset: 0;
 }
 
 .nav__bar-logo img {
@@ -105,202 +97,16 @@ svg.active .svg-elem-1 {
 
     &-description {
       font-size: clamp(1rem, calc(12px + 0.6vw), 1.8rem);
-      font-weight: $semi-bold;
+      font-weight: 600;
       animation: fadeIn 0.9s ease-in-out backwards;
     }
 
     &-heading {
       font-size: clamp(2.55rem, calc(12px + 3vw), 8rem);
-      font-weight: $bold;
+      font-weight: 800;
       text-shadow: 2px 2px 2px $redish;
       animation: fadeIn 1.1s ease-in-out backwards;
       padding-bottom: 2rem;
     }
-
-    &-btn {
-      position: relative;
-      color: $white;
-      font-weight: $semi-bold;
-      letter-spacing: 1px;
-      background-color: $redish;
-      border: none;
-      border-radius: 1rem;
-      padding: 0.8rem 2rem;
-      margin-top: 2rem;
-      animation: fade 1.4s ease-in-out backwards;
-      cursor: pointer;
-      // overflow: hidden;
-
-      &::before,
-      // &::after {
-      //   position: absolute;
-      //   top: -5px;
-      // }
-
-      // &::before {
-      //   content: url(/assets/icons/hand1.svg);
-      //   right: 0;
-      //   transform: translateX(58px);
-      // }
-
-      // &::after {
-      //   content: url(/assets/icons/hand2.svg);
-      //   left: 0;
-      //   transform: translateX(-58px);
-      // }
-
-      // &:hover::before,
-      // &:hover::after {
-      //   transition: transform 0.3s ease-out;
-      // }
-
-      // &:hover::after {
-      //   transform: translateX(32px);
-      // }
-
-      // &:hover::before {
-      //   transform: translateX(-32px);
-      // }
-
-      &:active {
-        transform: translateY(2px);
-        transition: transform 0.5s ease-out;
-      }
-    }
-  }
-}
-
-.picture-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.floating-icon {
-  position: absolute;
-  animation: float 4s ease-in-out infinite, fade 1.5s ease-in;
-  animation-fill-mode: backwards;
-
-  @media (max-width: $sm) {
-    max-width: 50px;
-  }
-
-  @media (min-width: $xxxxl) {
-    min-width: 100px;
-  }
-}
-
-@for $i from 1 through 4 {
-  .floating-icon:nth-child(#{$i}) {
-    animation-delay: #{$i * 0.4}s;
-  }
-}
-
-@each $key, $val in $breakpoints {
-  @media (min-width: #{$val}) {
-    .floating-icon:nth-child(1) {
-      $top: 10%;
-      $left: 10%;
-
-      @if $val < $md {
-        $left: -5%;
-      }
-
-      top: $top;
-      left: $left + ($key * 3.5%);
-    }
-  }
-}
-
-@each $key, $val in $breakpoints {
-  @media (min-width: #{$val}) {
-    .floating-icon:nth-child(2) {
-      $top: 50%;
-      $left: 0%;
-
-      @if $val < $md {
-        $left: -10%;
-      }
-
-      top: $top;
-      left: $left + ($key * 5%);
-    }
-  }
-}
-
-@each $key, $val in $breakpoints {
-  @media (min-width: #{$val}) {
-    .floating-icon:nth-child(3) {
-      $top: 15%;
-      $right: -10%;
-
-      @if $val > $sm {
-        $right: 5%;
-      }
-
-      @if $val > $md {
-        $right: 15%;
-      }
-
-      @if $val > $xxl {
-        $right: 22%;
-      }
-
-      @if $val > $xxxl {
-        $right: 25%;
-      }
-
-      top: $top;
-      right: $right + ($key + 2%);
-    }
-  }
-}
-
-@each $key, $val in $breakpoints {
-  @media (min-width: #{$val}) {
-    .floating-icon:nth-child(4) {
-      $top: 55%;
-      $right: -5%;
-
-      @if $val > $sm {
-        $right: 10%;
-      }
-
-      @if $val > $md {
-        $right: 17%;
-      }
-
-      @if $val > $xxl {
-        $right: 23%;
-      }
-
-      top: $top;
-      right: $right + ($key + 2%);
-    }
-  }
-}
-
-@each $key, $val in $breakpoints {
-  @media (min-width: #{$val}) {
-    .floating-icon:nth-child(5) {
-      $top: -13%;
-      $left: 40%;
-
-      top: $top;
-      left: $left + ($key + 1%);
-    }
-  }
-}
-
-// SVG ANIMATION
-
-@for $i from 1 through 14 {
-  .svg-elem-#{$i} {
-    animation: animate-svg-fill-#{$i}
-      0.5s
-      cubic-bezier(0.47, 0, 0.745, 0.715)
-      #{($i + 0.1s) /
-      8}
-      both;
   }
 }

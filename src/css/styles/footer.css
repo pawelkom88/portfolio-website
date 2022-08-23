@@ -1,0 +1,26 @@
+.social__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.social__media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__media-icons img {
+  width: 25px;
+  margin: 1rem;
+  cursor: pointer;
+}
+.social__media-description {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__media .coffee {
+  margin: 0 2px;
+}/*# sourceMappingURL=footer.css.map */

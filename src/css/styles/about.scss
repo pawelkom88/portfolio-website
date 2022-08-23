@@ -23,9 +23,8 @@
   }
 
   &__description {
-    font-size: clamp(0.7rem, 0.2rem + 1.2vw, 1.2rem);
+    font-size: clamp(0.8rem, 0.2rem + 1.2vw, 1.2rem);
     font-weight: 500;
-    word-wrap: break-word;
     line-height: 1.8;
 
     @media (min-width: $md) {
@@ -36,7 +35,7 @@
       padding: 0 15vw;
     }
 
-    @media (min-width: $md) {
+    @media (max-width: $sm) {
       text-align: center;
     }
   }
@@ -75,14 +74,37 @@
     left: 5px;
   }
 }
-
-.rotate {
-  transform-origin: center;
-  transform-box: fill-box;
+path {
+  opacity: 0;
 }
 
-// @for $i from 1 through 9 {
-//   .rotate:nth-child(#{$i}) {
-//     transform: translate3d(0px, 40.1992px, 0px) rotate(-10.7198deg);
-//   }
-// }
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@for $i from 1 through 15 {
+  path:nth-child(#{$i}) {
+    animation-delay: calc($i / 5) + 0.2s;
+  }
+}
+
+.y {
+  animation: pulse-black 3s ease infinite;
+}
+
+@keyframes pulse-black {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
