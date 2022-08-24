@@ -237,3 +237,9 @@
     height: 100%;
   }
 }
+
+.basket {
+  @media (min-width: $large) {
+    width: 100%;
+  }
+}
