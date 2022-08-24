@@ -51,17 +51,17 @@ section {
   border: none;
   border-radius: 1rem;
   padding: 0.8rem 2rem;
-  margin-top: 2rem;
-  animation: fade 1.4s ease-in-out backwards;
+  transition: letter-spacing 0.3s ease;
+
   cursor: pointer;
 
   &:active {
     transform: translateY(4px);
     transition: transform 0.5s ease-out;
   }
-}
 
-// a:focus,
-// button:focus {
-//   outline: 3px solid $yellow-secondary;
-// }
+  &:hover {
+    letter-spacing: 3px;
+    transition: letter-spacing 0.3s ease;
+  }
+}

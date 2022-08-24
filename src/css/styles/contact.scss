@@ -3,6 +3,7 @@
 @import "../partials/mixins";
 
 .contact {
+  position: relative;
   min-height: 0;
   background-color: $greenish;
 
@@ -19,13 +20,12 @@
   }
 
   &__form {
-    width: 100%;
     display: flex;
     font-weight: 600;
     margin-top: 4vh;
 
     @media (max-width: $large) {
-      flex-direction: column;
+      justify-content: center;
     }
 
     &-img {
@@ -34,7 +34,7 @@
       background: $light-purple;
 
       @media (max-width: $large) {
-        order: 1;
+        display: none;
       }
     }
 
@@ -46,7 +46,7 @@
       padding: 3vw 7vh;
 
       @media (max-width: $large) {
-        order: 0;
+        width: 100%;
         padding: 5vw 10vw;
       }
 
@@ -64,8 +64,7 @@
         padding: 1rem;
 
         &:focus {
-          outline: 2px solid $light-purple;
-          outline-style: dotted;
+          outline: 3px solid $light-purple;
         }
       }
 
@@ -105,13 +104,100 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 70%;
   transform: translate(-50%, -50%);
-  background: red;
-  min-height: 50vh;
-  width: 80%;
+  background-color: $white;
+  padding: 2rem 0;
+  z-index: 2;
 
-  @media (min-width: $large) {
-    width: 50%;
+  @media (max-width: $large) {
+    width: 90%;
+  }
+
+  &__heading {
+    text-align: center;
+    color: $redish;
+    margin: 2rem 0;
+  }
+
+  &__img {
+    max-width: 30%;
+    margin: 0 auto;
+
+    @media (max-width: $large) {
+      max-width: 100%;
+    }
+  }
+}
+
+.modal2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  z-index: 3;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 5px solid $white;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 75px;
+    left: 75px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 75px;
+    left: 75px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 75px;
+    left: 75px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+.close-btn {
+  max-width: 3vw;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  animation: swing ease-in-out 1.5s infinite alternate;
+  cursor: pointer;
+
+  @media (max-width: $large) {
+    right: 1.5rem;
   }
 }
 
@@ -124,6 +210,14 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
 }

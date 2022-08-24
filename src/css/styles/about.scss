@@ -26,6 +26,7 @@
     font-size: clamp(0.8rem, 0.2rem + 1.2vw, 1.2rem);
     font-weight: 500;
     line-height: 1.8;
+    text-align: justify;
 
     @media (min-width: $md) {
       padding: 0 10vw;
@@ -34,16 +35,16 @@
     @media (min-width: $xxl) {
       padding: 0 15vw;
     }
-
-    @media (max-width: $sm) {
-      text-align: center;
-    }
   }
 
   &__me {
     margin-top: 2rem;
     z-index: 1;
   }
+}
+
+.greeting {
+  color: $redish;
 }
 
 .img-overlay {

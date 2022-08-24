@@ -74,21 +74,6 @@
       <header>
         <!-- Navigation start -->
         <nav class="nav__bar">
-          <a href="index.html">
-            <picture class="nav__bar-logo">
-              <source
-                width="40"
-                height="39"
-                media="(max-width:576px)"
-                srcset="/assets/icons/LOGO-WEBP.webp" />
-              <img
-                width="60"
-                height="58"
-                src="/assets/icons/LOGO.png"
-                srcset="/assets/icons/LOGO.png 1x"
-                alt="logo, red letter p with white stroke" />
-            </picture>
-          </a>
           <ul class="nav__bar-links">
             <li class="nav-link">
               <a href="#Projects">Projects</a>
@@ -105,9 +90,24 @@
       </header>
       <!-- Hero section start -->
       <div class="hero__main">
-        <p class="hero__main-description">I am Pawel</p>
-        <h1 class="hero__main-heading">I design & build UI.</h1>
-        <a href="#" class="btn">Resume</a>
+        <h1 class="hero__main-heading">
+          let <span class="bracket">{</span> developer, designer, creative thinker
+          <span class="bracket">}</span> = Pawel
+        </h1>
+        <picture>
+          <source media="(max-width:576px)" srcset="/assets/img/ideas.webp" />
+          <img
+            class="hero__main-img"
+            src="/assets/img/ideas.png"
+            srcset="/assets/img/ideas.png 1x"
+            alt="man thinking hard" />
+        </picture>
+        <a
+          role="button"
+          href="https://github.com/pawelkom88/pawelkom88/raw/main/Pawel%20Komorkiewicz%20-%20resume.pdf"
+          class="btn hero__main-btn"
+          >RESUME</a
+        >
       </div>
     </section>
     <!-- Hero section end -->
@@ -122,15 +122,11 @@
         <!-- Project 1 -->
         <div class="projects__card outletity">
           <div class="projects__card-img">
-            <picture class="height">
+            <picture>
               <source media="(max-width:576px)" srcset="/assets/icons/basket.webp" />
-              <source
-                width="150"
-                height="218"
-                media="(max-width:576px)"
-                srcset="/assets/icons/basket.webp" />
               <img
-                class="height"
+                class="basket"
+                width="300"
                 loading="lazy"
                 src="/assets/icons/basket.png"
                 srcset="/assets/icons/basket.png 1x"
@@ -349,10 +345,12 @@
           srcset="/assets/icons/arrow-down.png 1x"
           alt="doodle icon" />
         <p class="about__description">
-          I am an easy-going bloke with a passion for web-development. I never stop learning and try
-          to absorb everything related to this field. If I do not repository, I read about coding.
-          If I do not read about coding, I watch courses on Front-end Masters. I wish there were 48
-          hours in a day so I could develop my passion for the guitar and sport even further.
+          <span class="greeting">Hello there !</span> I am exited you got that far down the page :)
+          My name is Pawel I am an easy-going bloke with a passion for web-development. I never stop
+          learning and try to absorb everything related to this field. If I do not code, I read
+          about coding and watch courses on Front-end Masters. I wish there were 48 hours in a day
+          so I could develop my passion for front-end technologies, the guitar and sport even
+          further.
         </p>
         <br />
         <p class="about__description">
@@ -442,7 +440,25 @@
           </form>
         </div>
         <div class="overlay"></div>
-        <div class="modal">asdasdasdasd</div>
+        <div class="modal2">
+          <div class="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="modal">
+          <img class="close-btn" src="/assets/icons/close-sign.svg" alt="close icon" />
+          <picture>
+            <source media="(max-width:576px)" srcset="/assets/img/modal-img.png" />
+            <img
+              class="modal__img"
+              src="/assets/img/modal-img.png"
+              srcset="/assets/img/modal-img.png 1x"
+              loading="lazy"
+              alt="grumpy man holding a laptop" />
+          </picture>
+          <h3 class="heading modal__heading">Me waiting for your e-mail...</h3>
+        </div>
       </section>
     </main>
     <img class="divider" src="/assets/img/divider2.png" alt="divider" />

@@ -3,10 +3,11 @@
 .social__media {
   @include flex(center, center);
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   &-icons {
     @include flex(center, center);
+    margin-bottom: 1rem;
 
     & img {
       width: 25px;

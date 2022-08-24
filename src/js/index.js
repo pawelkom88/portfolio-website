@@ -25,10 +25,25 @@ function innit() {
   const form = document.querySelector(".contact__form-details");
   const overlay = document.querySelector(".overlay");
   const modal = document.querySelector(".modal");
+  const modalCloseBtn = document.querySelector(".close-btn");
+  const loaderModal = document.querySelector(".modal2");
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+      overlay.style.display = "none";
+    }
+  });
+
+  modalCloseBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    overlay.style.display = "none";
+  });
 
   overlay.addEventListener("click", e => {
     e.stopPropagation();
     overlay.style.display = "none";
+    modal.style.display = "none";
   });
 
   form.addEventListener("submit", function (e) {
@@ -39,6 +54,8 @@ function innit() {
       object[key] = value;
     });
     const json = JSON.stringify(object);
+    loaderModal.style.display = "block";
+    overlay.style.display = "block";
 
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -50,9 +67,9 @@ function innit() {
     })
       .then(async response => {
         if (response.status == 200) {
-          confetti();
+          loaderModal.style.display = "none";
           modal.style.display = "block";
-          overlay.style.display = "block";
+          confetti({particleCount: 300, spread: 360});
         } else {
           overlay.style.display = "block";
 
