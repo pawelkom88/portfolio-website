@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   grid-column: 8/12;
-  font-size: clamp(0.7rem, 0.2rem + 1vw, 1rem);
+  font-size: clamp(0.8rem, 0.2rem + 1vw, 1rem);
   background-color: #ffffff;
   margin-top: -4.5rem;
   padding: 0 2rem;
@@ -64,6 +64,9 @@
   .projects__card-desc {
     padding: 0 1rem;
   }
+}
+.projects__card .card-content {
+  text-align: justify;
 }
 .projects__card .card-heading {
   font-size: clamp(0.8rem, 0.3rem + 1.1vw, 3rem);
