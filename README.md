@@ -1,12 +1,12 @@
 <p align="center">
-<img src="#" alt="Super awesome img" width="350" height="250"/>
+<img src="https://github.com/pawelkom88/portfolio-website/raw/DEVELOP/Card-social%20media.png" alt="Super awesome img" width="450" height="300"/>
 </p>
 
 ## About The Project
 Finally, the time has come. I have been thinking about a portfolio site for long time but could not bring my ideas to life. Light bulb moment and there it is ! 
 
 ## Demo
-Here is a [live demo ](myportfolioweb.site)
+Here is a [live demo ](https://myportfolioweb-site.netlify.app)
 
 ## How I worked on this project
 - I built this website based on Figma designs:
