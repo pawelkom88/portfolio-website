@@ -76,6 +76,7 @@
     <script type="module" src="./js/index.js"></script>
   </head>
   <body>
+    <a href="#main" class="visible-hidden">Jump directly to main content</a>
     <section class="hero">
       <header>
         <!-- Navigation start -->
@@ -118,7 +119,7 @@
     </section>
     <!-- Hero section end -->
     <img class="divider" src="/assets/img/divider1.png" alt="divider" />
-    <main>
+    <main id="main">
       <!-- Project section start -->
       <section id="Projects" class="projects">
         <h2 class="heading heading-projects">Projects</h2>
@@ -378,7 +379,16 @@
               alt="man siting on a chair with laptop icon" />
           </picture>
           <!-- SVG START -->
-          <svg class="programming-doodles" fill="none" viewBox="0 0 800 550">
+          <svg
+            class="programming-doodles"
+            fill="none"
+            viewBox="0 0 800 550"
+            aria-describedby="my-title my-descrip"
+            role="img">
+            <title id="my-title">Programming words</title>
+            <desc id="my-descrip">
+              Animated programming words such as function, objects, array, loops, symbols.
+            </desc>
             <path
               d="m558.748 193.698-3.461-8.105c-1.332-3.659-.989-6.849 1.029-9.57-2.611-.468-4.454-2.181-5.531-5.138-.419-1.152-.807-2.998-1.163-5.536-.325-2.606-.724-4.561-1.198-5.864-1.24-3.408-3.061-5.526-5.463-6.354l-.991-.151c-1.085-.172-1.691-.434-1.818-.785-.146-.401.482-.857 1.886-1.368 2.155-.784 4.426-.39 6.814 1.181 2.42 1.503 4.26 3.983 5.518 7.441.365 1.003.637 2.607.815 4.812.178 2.205.541 4.06 1.088 5.563.548 1.504 1.455 2.592 2.722 3.266.797-.46 1.546-.818 2.248-1.073.852-.31 1.442-.014 1.77.888.165.451.163.991-.006 1.62-.168.628-.453 1.016-.854 1.162l-1.257.287c-.752.274-1.196.691-1.333 1.251-.51 1.718-.318 3.805.576 6.261l3.454 6.916c1.149 3.157 1.353 6.29.611 9.398-.742 3.107-2.441 5.145-5.097 6.111-1.403.511-2.196.516-2.379.015-.109-.301.123-.754.697-1.361.592-.556.945-.911 1.059-1.066 1.708-2.324 1.796-5.592.264-9.801Z"
               fill="#F8CE6A" />
