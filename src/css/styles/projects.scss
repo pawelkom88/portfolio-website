@@ -54,7 +54,7 @@
       filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, 0.25));
 
       @media (max-width: $large) {
-        min-height: 250px;
+        min-height: 300px;
         margin: 0;
         filter: none;
       }
@@ -88,7 +88,6 @@
     }
 
     & .card-btn {
-      font-size: 0.7rem;
       margin-top: 1.5rem;
       margin-right: 0.3rem;
       padding: 0.4rem 1rem;
@@ -97,14 +96,14 @@
       outline-offset: -2px;
       transition: outline-offset 0.1s ease-in-out;
 
-      @media (max-width: $xl) {
-        font-size: 0.7rem;
-        padding: 0.2rem 1rem;
+      @media (max-width: $xxl) {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.7rem;
         margin-right: 0.2rem;
       }
 
       @media (max-width: $sm) {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         padding: 0.2rem 1.2rem;
         margin-right: 0.3rem;
       }
